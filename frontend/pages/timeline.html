@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Journey Timeline - Game Memory AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <script id="tailwind-config" src="../js/timeline.config.js"></script>
+</head>
+
+
+<body class="bg-background text-on-surface selection:bg-primary/30 selection:text-primary">
+    <!-- Navigation Sidebar (Authority: Shared Components JSON) -->
+    <aside
+        class="h-full w-64 fixed left-0 top-0 border-r border-white/10 bg-surface/10 backdrop-blur-xl shadow-2xl flex flex-col py-8 px-4 z-50">
+        <div class="mb-10 px-2 flex items-center gap-3">
+            <img alt="Game Memory AI Logo" class="w-10 h-10"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+            <div>
+                <h1 class="text-headline-md font-headline-md font-bold text-primary leading-tight">Game Memory AI</h1>
+                <p class="text-label-sm font-label-sm text-on-surface-variant">Pro Gamer Elite</p>
+            </div>
+        </div>
+        <nav class="flex-1 space-y-2">
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="dashboard.html">
+                <span class="material-symbols-outlined text-[20px]">dashboard</span>
+                Dashboard
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="my_games.html">
+                <span class="material-symbols-outlined text-[20px]">videogame_asset</span>
+                My Games
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="memories.html">
+                <span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+                Memories
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl text-primary font-bold border-r-2 border-primary bg-white/5 scale-95 transition-transform font-label-md text-label-md group"
+                href="timeline.html">
+                <span class="material-symbols-outlined text-[20px]">timeline</span>
+                Journey Timeline
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="continue_journey.html">
+                <span class="material-symbols-outlined text-[20px]">play_arrow</span>
+                Continue Journey
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="upload_memory.html">
+                <span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+                Upload Memory
+            </a>
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md group"
+                href="achievements.html">
+                <span class="material-symbols-outlined text-[20px]">emoji_events</span>
+                Achievements
+            </a>
+        </nav>
+        <div class="mt-auto pt-8 border-t border-white/5">
+            <a class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant font-label-md text-label-md"
+                href="settings.html">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                Settings
+            </a>
+            <div class="mt-6 flex items-center gap-3 px-4">
+                <div class="w-10 h-10 rounded-full bg-primary-container overflow-hidden ring-2 ring-primary/20">
+                    <img alt="User profile photo" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4SGS6kZjr1mtbQQyJWze-5iSvsTZUf1DRMEbG-aRu17rLKFcM6NSACE9R-TqLbo2l-fdhbB7Hn_m6x2KdQZdxU-hghum2q0yPqCRy5D7vQ7bv8dncm2oWM72c8hjH9nRLAMCXwg4BHovD824a_9wMN-qJ6dgwaC2PNCr2lJvsvYLaRxbOThmBAxFVjZuq0AzguoV6xaCSQDLYwM9JIY3qkgtdJ9pqqZ--RigfruFDatkPf4Q2JVqiHJPztGTVueVsl09qbpbRhuo">
+                </div>
+                <div>
+                    <p class="text-label-md font-label-md font-bold text-on-surface">Alex Mercer</p>
+                    <p class="text-[10px] text-on-surface-variant">Lv. 99 Archmage</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Top Navigation (Authority: Shared Components JSON) -->
+    <header
+        class="fixed top-0 right-0 w-[calc(100%-256px)] h-16 z-40 bg-background/80 backdrop-blur-md border-b border-white/5 flex justify-between items-center px-8">
+        <div class="relative w-96">
+            <span
+                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+            <input
+                class="w-full bg-black/20 border border-white/10 rounded-full py-2 pl-10 pr-4 text-body-md font-body-md focus:ring-2 focus:ring-primary/50 focus:border-primary/50 transition-all outline-none"
+                placeholder="Search milestones or locations..." type="text">
+        </div>
+        <div class="flex items-center gap-6">
+            <button
+                class="relative hover:text-primary transition-colors focus:ring-2 focus:ring-primary/50 rounded-full p-1">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full"></span>
+            </button>
+            <button class="hover:text-primary transition-colors focus:ring-2 focus:ring-primary/50 rounded-full p-1">
+                <span class="material-symbols-outlined">account_circle</span>
+            </button>
+            <div class="h-6 w-[1px] bg-white/10"></div>
+            <button
+                class="bg-primary-container text-on-primary-container px-4 py-2 rounded-lg font-label-md text-label-md flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span class="material-symbols-outlined text-[18px]">bolt</span>
+                Live Sync
+            </button>
+        </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main class="ml-64 pt-24 pb-32 px-12 min-h-screen relative overflow-hidden">
+        <!-- Ambient Atmosphere -->
+        <div class="fixed inset-0 pointer-events-none">
+            <div class="absolute top-1/4 -right-1/4 w-[600px] h-[600px] bg-primary/5 blur-[120px] rounded-full"></div>
+            <div
+                class="absolute bottom-1/4 -left-1/4 w-[500px] h-[500px] bg-secondary-container/5 blur-[120px] rounded-full">
+            </div>
+        </div>
+        <!-- Header -->
+        <div class="max-w-4xl mx-auto mb-16 text-center">
+            <h2 class="text-display font-display mb-4">Journey Timeline</h2>
+            <p class="text-body-lg font-body-lg text-on-surface-variant max-w-xl mx-auto">
+                Relive the most critical moments of your odyssey, reconstructed with AI precision.
+            </p>
+        </div>
+        <!-- Timeline Container -->
+        <div class="max-w-5xl mx-auto relative">
+            <!-- Centered Connecting Line -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] glow-line opacity-30"></div>
+            <!-- Milestone 1 -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
+                <div class="order-2 md:order-1 text-right pr-8">
+                    <div class="inline-flex flex-col items-end">
+                        <span class="text-primary font-label-md text-label-md mb-2">October 12, 2023</span>
+                        <h3 class="text-headline-md font-headline-md mb-3 text-on-surface">Met Captain Arlen</h3>
+                        <p class="text-on-surface-variant text-body-md font-body-md leading-relaxed">
+                            The turning point. Arlen revealed the location of the Sunstone, triggering the 'Call of the
+                            Ancient' quest line. AI analysis shows a 45% increase in narrative engagement here.
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full glass-card flex items-center justify-center z-10 border-primary/40 ring-4 ring-background opacity-0 opacity-100"
+                    style="transition: 0.8s ease-out;">
+                    <span class="material-symbols-outlined text-primary">history_edu</span>
+                </div>
+                <div class="order-1 md:order-2 pl-8">
+                    <div class="glass-card rounded-2xl overflow-hidden aspect-video relative group opacity-0 opacity-100"
+                        style="transition: 0.8s ease-out;">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="A cinematic low-angle shot of a heroic fantasy captain in ornate silver armor, standing before a glowing holographic map in a dimly lit war room. The aesthetic is high-fidelity gaming with deep purples and electric blue lighting. Soft particles of digital dust float in the air, creating a rich atmosphere."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf9gqxmnaUZFHFIDnWIV8H3b-siQWcJVZvk7gD41llXrsUG5sgCfH0XETY0nMVqAUHQBphmDUa398kEbVT7OrT2fHh7DCla2KlpNf0zRM7vl6NpePr2_U7GbnATAdiwkBpK12MbTGKnX81kiSQd63QMXt_HYX4j3oJ2GjnlvQhcHx-WhW_G4BT7OHoyToSt5tQuodAqp4QjrYT069SBsgUOQHtxMksAyOH_y0uTTGzSkVlbYJdYoQuIVyOE9WokssnF2KSy3WNl2M">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Milestone 2 -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
+                <div class="order-1 pl-8">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden aspect-video relative group opacity-0 translate-y-10">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="A close-up of a legendary obsidian sword resting on an ancient stone altar, pulses of violet energy rippling along its edge. The lighting is moody and focused, with sharp highlights reflecting off the glass-like surface of the blade. The background is a dark, atmospheric cavern with hints of bioluminescent moss."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhs_nET_Jxuv6mt9nurBcVxr18zTyLBWufdCibh4TK1-5LPnfsv8f6NMnMaCdBm05vB5T_MX5cBEBb9_V8zzcNJmqyKp3sn89fg1JVQMHt-chsX-nJwWABnZH1EyE-ae7xcPp6T2Ga3jfh6LcoLPg9BWdutP37hXARMYjwUdhVGz97KJHodwPuy0qmMmMiOt7blwXuFwyYf4RrYDTt03A3PzIHQQH_Djc8da9IKevwbDUckz7GXmyoDvmbGD75A_a6dBR7_ur5U3o">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full glass-card flex items-center justify-center z-10 border-primary/40 ring-4 ring-background opacity-0 translate-y-10">
+                    <span class="material-symbols-outlined text-primary">swords</span>
+                </div>
+                <div class="order-2 text-left pl-8">
+                    <div class="inline-flex flex-col items-start">
+                        <span class="text-primary font-label-md text-label-md mb-2">October 15, 2023</span>
+                        <h3 class="text-headline-md font-headline-md mb-3 text-on-surface">Found Ancient Sword</h3>
+                        <p class="text-on-surface-variant text-body-md font-body-md leading-relaxed">
+                            Secured the 'Frost-Bite' legendary blade after solving the Obsidian Puzzle. AI detects this
+                            weapon significantly reduced combat duration by 22% in subsequent encounters.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Milestone 3: SPECIAL BOSS HIGHLIGHT -->
+            <div class="relative mb-32 group">
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full glass-card flex items-center justify-center z-20 border-tertiary/60 ring-8 ring-background pulsate bg-tertiary-container/20 opacity-0 translate-y-10">
+                    <span class="material-symbols-outlined text-tertiary scale-125"
+                        style="font-variation-settings: 'FILL' 1;">stars</span>
+                </div>
+                <div class="glass-card rounded-3xl p-10 mt-8 relative overflow-hidden opacity-0 translate-y-10">
+                    <div class="absolute top-0 right-0 p-8 opacity-10">
+                        <span class="material-symbols-outlined text-[160px]">skull</span>
+                    </div>
+                    <div class="grid md:grid-cols-5 gap-8 items-center relative z-10">
+                        <div class="md:col-span-2">
+                            <div class="rounded-xl overflow-hidden aspect-square ring-2 ring-tertiary/20">
+                                <img class="w-full h-full object-cover"
+                                    data-alt="A massive, terrifying ice dragon with wings made of jagged frozen crystals, roaring atop a snowy peak. The sky is a dark indigo with a swirling aurora borealis in shades of neon green and violet. The scene is epic and cinematic, captured in ultra-wide angle to emphasize the scale of the beast."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiFZW00PwQUayaM5gieTpZpWzf_sa3tXyteYwUKMhIqAMs7K_2EA_NUjufPLiPiNDnpwqcfuDPe5Z3PwWuhELvBe6yUmA9i-WRmOldhZfWECpQKWe1FDNDDoSeluFRm0oGO7ZzgccNOCzQqZRI5_u4Qvggr7oFRp2NoQkgoJl8FqtVxwm1MSALKIhSm0qvXobcAsFdCgAYTfZYiy2ccSxWE7MhkMlmHHs6rTHEbVc5lce4yLyi-MRMQJlcc4BDsOyF0yMWJhUBPX8">
+                            </div>
+                        </div>
+                        <div class="md:col-span-3">
+                            <div
+                                class="inline-block px-3 py-1 rounded-full bg-tertiary/10 text-tertiary text-label-sm font-label-sm mb-4">
+                                BOSS DEFEATED</div>
+                            <h3 class="text-display font-display text-white mb-4">Defeated Ice Dragon</h3>
+                            <p class="text-body-lg font-body-lg text-on-surface-variant mb-6">
+                                The most challenging combat sequence of the journey. AI recorded 12 perfect dodges and a
+                                critical strike accuracy of 94%. Total battle time: 8m 42s.
+                            </p>
+                            <div class="flex gap-4">
+                                <div class="bg-white/5 p-4 rounded-xl flex-1 border border-white/5">
+                                    <p class="text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">
+                                        Rewards</p>
+                                    <p class="text-headline-md font-headline-md text-primary">Dragon Soul</p>
+                                </div>
+                                <div class="bg-white/5 p-4 rounded-xl flex-1 border border-white/5">
+                                    <p class="text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">XP
+                                        Gained</p>
+                                    <p class="text-headline-md font-headline-md text-tertiary">+45,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Milestone 4 -->
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
+                <div class="order-2 md:order-1 text-right pr-8">
+                    <div class="inline-flex flex-col items-end">
+                        <span class="text-primary font-label-md text-label-md mb-2">October 22, 2023</span>
+                        <h3 class="text-headline-md font-headline-md mb-3 text-on-surface">Entered Frost City</h3>
+                        <p class="text-on-surface-variant text-body-md font-body-md leading-relaxed">
+                            New region unlocked. The AI cataloged 14 new merchant NPCs and a hidden side-quest in the
+                            Tavern District. Temperature hazard management became a priority.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full glass-card flex items-center justify-center z-10 border-primary/40 ring-4 ring-background opacity-0 translate-y-10">
+                    <span class="material-symbols-outlined text-primary">location_on</span>
+                </div>
+                <div class="order-1 md:order-2 pl-8">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden aspect-video relative group opacity-0 translate-y-10">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="A sprawling futuristic city built into a frozen mountain range, featuring glowing neon skyscrapers and flying transport pods. The lighting is a high-contrast mix of cold blue ice and warm amber city lights. The atmosphere is dense with fog and snow, creating a layered, deep architectural composition."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqrXGwVpgg9kNPkEz_xOsxhpeQmHngW9LUnPVymu1xcqEHpRoO2VMP2R08kljZFyqJWBQcDJYLhHG7EFNdgV-K54gv4bjyVvTmiZMG66zOB6u3jDguvP0LLkITPM8EX5sfGfVdvMpJkm6EhOdAEoCQStpDhfnXCYaCpltv1jH1hATsWd4aihbY87fBeJZPGkVLymmEoMHKzjex0BhcmLwEWTSXWAqkMR5bYaNIEfZPoAC-PrSJ_mlENKTBja0a3ulC8lkE5j1vxcQ">
+                        <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Current State -->
+            <div
+                class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center opacity-70 grayscale-[0.5] hover:grayscale-0 hover:opacity-100 transition-all">
+                <div class="order-1 pl-8">
+                    <div
+                        class="glass-card rounded-2xl overflow-hidden aspect-video relative group opacity-0 translate-y-10">
+                        <img class="w-full h-full object-cover"
+                            data-alt="A mysterious, glowing ancient temple entrance hidden behind a waterfall, with ethereal light streaming through stone cracks. The style is mystical and grand, with a focus on ancient stone textures and vibrant magical particle effects. Deep shadows and bright highlights create a sense of impending discovery."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfaGah_oIYslpA5KtpK4J1xCLIEXu9l5HKaqJMHLTZq9IbLGWKVL0pax1DIpGRScb31xmsOKbUGX87YbII5jMecJWQBgxKvS3tQAQAGsPoLx0sRBK84Bu8FZ8bRJWDSK_AQ44LOaGtpi-3jwwoEQVhsfSQFepNcUo7VWzLz3VM9OCex4W6S9VJ1HxggQBemjhyhno8Lfdr5u0OSIUxckDU_ednAYymqyhvFWpq3-Ktdc9ZnZvYTs-8Gzi0bJaNcX2o2d5OCOVUCfo">
+                        <div
+                            class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
+                            <span
+                                class="bg-primary text-on-primary px-4 py-1 rounded-full text-label-md font-label-md">IN
+                                PROGRESS</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full glass-card flex items-center justify-center z-10 border-primary pulsate bg-primary-container/20 opacity-0 translate-y-10">
+                    <span class="material-symbols-outlined text-primary"
+                        style="font-variation-settings: 'FILL' 1;">help</span>
+                </div>
+                <div class="order-2 text-left pl-8">
+                    <div class="inline-flex flex-col items-start">
+                        <span class="text-on-surface-variant font-label-md text-label-md mb-2">CURRENT LOCATION</span>
+                        <h3 class="text-headline-md font-headline-md mb-3 text-on-surface">Ancient Temple</h3>
+                        <p class="text-on-surface-variant text-body-md font-body-md leading-relaxed italic">
+                            Analyzing mysterious energy readings... Approaching the inner sanctum. Potential boss
+                            encounter detected at 78% probability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Contextual FAB (Suppressing as per guidelines but leaving for logic reference if needed elsewhere) -->
+    <script src="../js/timeline.js"></script>
+</body>
+
+</html>

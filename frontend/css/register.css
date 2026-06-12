@@ -1,0 +1,64 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100;300;400;500;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Geist', sans-serif;
+            background-color: #0A0A0F;
+            overflow-x: hidden;
+        }
+
+        .glass-surface {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-input {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .glass-input:focus {
+            border-color: #7c3aed;
+            box-shadow: 0 0 15px rgba(124, 58, 237, 0.2);
+            outline: none;
+        }
+
+        .timeline-node {
+            position: relative;
+        }
+
+        .timeline-node::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 24px;
+            bottom: -24px;
+            width: 1px;
+            background: linear-gradient(to bottom, #7c3aed, transparent);
+            opacity: 0.3;
+        }
+
+        .timeline-node:last-child::before {
+            display: none;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .glow-point {
+            width: 4px;
+            height: 4px;
+            background: #7c3aed;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #7c3aed;
+        }
+    

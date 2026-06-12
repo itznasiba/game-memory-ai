@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/continue_journey.css">
+    <script id="tailwind-config" src="../js/continue_journey.config.js"></script>
+</head>
+
+<body class="font-body-md text-body-md selection:bg-primary/30">
+    <!-- Global Layout Wrapper -->
+    <div class="flex min-h-screen">
+        <!-- SideNavBar - Predicted Shared Component -->
+        <aside
+            class="hidden md:flex flex-col h-full w-64 fixed left-0 top-0 bg-surface/10 backdrop-blur-xl border-r border-white/10 shadow-2xl py-8 px-4 z-50">
+            <div class="flex items-center gap-3 px-2 mb-10">
+                <img alt="Game Memory AI Logo" class="w-10 h-10 object-contain"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+                <div class="flex flex-col">
+                    <span class="text-headline-md font-headline-md font-bold text-primary">Game Memory AI</span>
+                    <span class="text-[10px] font-label-sm uppercase tracking-widest text-on-surface-variant/60">Pro
+                        Gamer Elite</span>
+                </div>
+            </div>
+            <nav class="flex-1 space-y-1">
+                <!-- Dashboard -->
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="dashboard.html">
+                    <span class="material-symbols-outlined text-lg">dashboard</span>
+                    <span class="font-label-md text-label-md">Dashboard</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="my_games.html">
+                    <span class="material-symbols-outlined text-lg">videogame_asset</span>
+                    <span class="font-label-md text-label-md">My Games</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="memories.html">
+                    <span class="material-symbols-outlined text-lg">auto_awesome</span>
+                    <span class="font-label-md text-label-md">Memories</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="timeline.html">
+                    <span class="material-symbols-outlined text-lg">timeline</span>
+                    <span class="font-label-md text-label-md">Journey Timeline</span>
+                </a>
+                <!-- Active Item -->
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-primary font-bold border-r-2 border-primary bg-primary/10 scale-95 transition-transform group"
+                    href="continue_journey.html">
+                    <span class="material-symbols-outlined text-lg"
+                        style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    <span class="font-label-md text-label-md">Continue Journey</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="upload_memory.html">
+                    <span class="material-symbols-outlined text-lg">cloud_upload</span>
+                    <span class="font-label-md text-label-md">Upload Memory</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="achievements.html">
+                    <span class="material-symbols-outlined text-lg">emoji_events</span>
+                    <span class="font-label-md text-label-md">Achievements</span>
+                </a>
+                <a class="flex items-center gap-3 py-3 px-4 rounded-xl text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200 group"
+                    href="settings.html">
+                    <span class="material-symbols-outlined text-lg">settings</span>
+                    <span class="font-label-md text-label-md">Settings</span>
+                </a>
+            </nav>
+            <div class="mt-auto px-2 pt-6 border-t border-white/5">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-10 h-10 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary">account_circle</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-label-md font-bold">Kaelen Vox</span>
+                        <span class="text-[10px] text-on-surface-variant">Level 88 Archer</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- TopNavBar - Predicted Shared Component -->
+        <header
+            class="fixed top-0 right-0 w-full md:w-[calc(100%-256px)] h-16 bg-background/80 backdrop-blur-md z-40 border-b border-white/5 flex justify-between items-center px-8">
+            <div class="flex items-center flex-1">
+                <div class="relative w-full max-w-md group">
+                    <span
+                        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60 group-focus-within:text-primary transition-colors">search</span>
+                    <input
+                        class="w-full bg-black/20 border border-white/10 rounded-full py-2 pl-10 pr-4 text-label-md focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all outline-none"
+                        placeholder="Search memories..." type="text">
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <button
+                    class="relative hover:text-primary transition-colors focus:ring-2 focus:ring-primary/50 rounded-full p-1">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full"></span>
+                </button>
+                <div class="h-6 w-[1px] bg-white/10"></div>
+                <div class="flex items-center gap-3 cursor-pointer group">
+                    <img class="w-8 h-8 rounded-full border border-primary/20 group-hover:border-primary transition-all"
+                        data-alt="A portrait of a male pro gamer with a focused expression, wearing high-end noise-canceling headphones. The lighting is low and moody, with sharp violet and azure rim light catching the edges of his face. The background is a soft-focus gaming rig with glowing mechanical keyboards and liquid-cooled PC components, maintaining a professional and immersive dark-mode aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVGQABQBchKz2nwTO9-Z6CIkvv2nppCLQnMUhC6Wqs4zvjMegxhtrO8tC3C93yMjotLH6xLuhV_7s01DDNSygjxtT8nqaR1hjU8rjJ_4GJfaBHZjDRnyt8mZwA0ovUONSxrB4Z82xKlpAm-90oprmdvPjcAgkcoH72BDLEhQRSm6eurkpO4F7KG50zpLCjARJCUBy_xWXcByb33Pt_OBKVvBp7wr6GCS8K8g9wDv6H2GCTj6d5tuHQMiutBd4P61O-53ty4izoZBg">
+                    <span
+                        class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">expand_more</span>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content Area -->
+        <main class="flex-1 md:ml-64 pt-24 pb-16 px-8 min-h-screen relative">
+            <!-- Atmospheric Lighting Effects -->
+            <div
+                class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-secondary-container/5 rounded-full blur-[100px] pointer-events-none -z-10">
+            </div>
+            <div class="max-w-[1200px] mx-auto space-y-stack-lg">
+                <!-- Main Reconstruction Hero Card -->
+                <section class="relative overflow-hidden rounded-3xl glass-card p-12 text-center group">
+                    <div class="glow-point" style="transform: translate(397px, 149px);"></div>
+                    <div class="reconstruction-scan"></div>
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary text-label-sm uppercase tracking-tighter mb-8">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
+                        AI Reconstruction Active
+                    </div>
+                    <h1 class="font-display text-display mb-6">Continue Your Journey</h1>
+                    <div class="max-w-2xl mx-auto space-y-6">
+                        <p class="font-body-lg text-body-lg text-on-surface-variant/90 leading-relaxed italic">
+                            "You last defeated the <span class="text-primary font-bold">Ice Dragon</span> and arrived at
+                            <span class="text-primary font-bold">Frost City</span>. Captain Arlen is waiting for you
+                            near the city gates. Your next objective is to investigate the <span
+                                class="text-tertiary font-bold">Ancient Temple</span>."
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4 pt-4">
+                            <button
+                                class="primary-glow-btn flex items-center gap-3 px-10 py-4 rounded-full text-on-primary font-bold group">
+                                <span class="material-symbols-outlined"
+                                    style="font-variation-settings: 'FILL' 1;">play_circle</span>
+                                Launch Game
+                                <span
+                                    class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </button>
+                            <button
+                                class="bg-white/5 border border-white/10 hover:bg-white/10 px-8 py-4 rounded-full font-bold transition-all flex items-center gap-3">
+                                <span class="material-symbols-outlined">timeline</span>
+                                Open Timeline
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Subtle data-viz in bg -->
+                    <div class="absolute -bottom-10 left-0 w-full opacity-10 pointer-events-none">
+                        <svg class="w-full h-24 stroke-primary fill-none stroke-1" viewBox="0 0 1000 100">
+                            <path class="animate-[dash_5s_linear_infinite]" d="M0,50 Q250,10 500,50 T1000,50"
+                                stroke-dasharray="10 5"></path>
+                        </svg>
+                    </div>
+                </section>
+                <!-- Detail Grid -->
+                <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+                    <!-- Card 1: Current Objective -->
+                    <div
+                        class="glass-card p-6 rounded-2xl relative group hover:border-primary/40 transition-all cursor-default">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-tertiary">my_location</span>
+                            </div>
+                            <span class="text-label-md text-on-surface-variant uppercase tracking-widest">Current
+                                Objective</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-2">Investigate Ancient Temple</h3>
+                        <p class="text-label-sm text-on-surface-variant/60">Located in the Forsaken Tundra region</p>
+                    </div>
+                    <!-- Card 2: Last Known Location -->
+                    <div
+                        class="glass-card p-6 rounded-2xl relative group hover:border-primary/40 transition-all cursor-default">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div
+                                class="w-10 h-10 rounded-lg bg-secondary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-secondary">location_on</span>
+                            </div>
+                            <span class="text-label-md text-on-surface-variant uppercase tracking-widest">Last
+                                Location</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md mb-2">Frost City Gates</h3>
+                        <p class="text-label-sm text-on-surface-variant/60">Checkpoint saved 14h ago</p>
+                    </div>
+                    <!-- Card 3: Key Characters -->
+                    <div
+                        class="glass-card p-6 rounded-2xl relative group hover:border-primary/40 transition-all cursor-default overflow-hidden">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">groups</span>
+                            </div>
+                            <span class="text-label-md text-on-surface-variant uppercase tracking-widest">Key
+                                Contacts</span>
+                        </div>
+                        <div class="flex -space-x-4">
+                            <div class="relative group/avatar">
+                                <img class="w-12 h-12 rounded-full border-2 border-background object-cover ring-2 ring-primary/20"
+                                    data-alt="A portrait of a wise fantasy army captain character named Arlen. He has grey-streaked hair, a rugged bearded face, and is wearing intricate silver armor with blue glowing runes. The setting is a snowy outpost at twilight, with the soft glow of a campfire illuminating his features. The aesthetic is high-fantasy cinematic realism, consistent with the immersive dark gaming theme."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwMzSKR3RHQD3TvZdeLTeZMVdjwrAccgtg1M0OiWO4HjaqTCDZUxcEuZxpS22CYLaemQmHyw7pqb3kfghBsWsvu7m0jQ7-MaDfLMRO4aGSC_Ye2qTpu8Fkw4HS9U2EdPEfJfA5Cre3dbWz-EADmmoMfKAI_KonL6FGbYyH_X9KtFn3KHl6YlXAhOtULtmmhgD_OPIcwKsWgtMZ0FiKWjOpp7nkp5Yocu1rpXtTEyYcfN0wsAYRt4XE76fdAY-vmFmSi3clAQkw3SU">
+                                <div
+                                    class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-surface px-2 py-1 rounded text-[10px] whitespace-nowrap opacity-0 group-hover/avatar:opacity-100 transition-opacity">
+                                    Captain Arlen</div>
+                            </div>
+                            <div class="relative group/avatar">
+                                <img class="w-12 h-12 rounded-full border-2 border-background object-cover ring-2 ring-tertiary/20"
+                                    data-alt="A portrait of a mysterious female mage character named Melina. She has ethereal silver hair and violet eyes, wearing a dark hooded cloak embroidered with celestial patterns that shimmer with faint purple light. The background is a magical city under a starry sky, captured with a shallow depth of field and soft glowing particle effects. The style is professional digital game art with a premium dark-mode finish."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCuBhZUy0-M0aTSk9Ev9zeu3OXMaKgmZsqTFXyKB2HwJsGryHC0uGfnhmDc0aqHanozdYIrRVAlGjR5mziY_7P8HpD8JRmmfqDrav9D6WCt9zByVfyCQfeypQOsia6exhgzdHqaY70iTCUFqGTvlh9BFhKk4MjSktYbmC921R69nzwIx5wSA9Cfy9SrhmziKx6IgUKx4rewy3x2Bvj_FnEOXcLlf5C3_NJMsIjQx1zFPrVWRb09au_5Vj9kyMn0GQHro9yVNq9weU">
+                                <div
+                                    class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 bg-surface px-2 py-1 rounded text-[10px] whitespace-nowrap opacity-0 group-hover/avatar:opacity-100 transition-opacity">
+                                    Melina</div>
+                            </div>
+                            <div
+                                class="w-12 h-12 rounded-full bg-white/5 border-2 border-background flex items-center justify-center text-label-sm text-on-surface-variant">
+                                +3</div>
+                        </div>
+                    </div>
+                    <!-- Card 4: Story Progress -->
+                    <div
+                        class="glass-card p-6 rounded-2xl relative group hover:border-primary/40 transition-all cursor-default">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary">auto_graph</span>
+                            </div>
+                            <span class="text-label-md text-on-surface-variant uppercase tracking-widest">Story
+                                Progress</span>
+                        </div>
+                        <div class="flex items-end justify-between mb-2">
+                            <h3 class="font-headline-md text-headline-md">Act III</h3>
+                            <span class="text-primary font-bold text-headline-md">85%</span>
+                        </div>
+                        <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full shadow-[0_0_10px_#7c3aed]" style="width: 85%;">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- AI Insights List Section -->
+                <section class="mt-16 space-y-gutter">
+                    <h2 class="font-headline-md text-headline-md flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">spark</span>
+                        Memorable Moments (Last Session)
+                    </h2>
+                    <div
+                        class="relative space-y-stack-md before:absolute before:left-[19px] before:top-2 before:bottom-2 before:w-[2px] before:bg-gradient-to-b before:from-primary before:to-transparent">
+                        <!-- Insight 1 -->
+                        <div
+                            class="glass-card ml-10 p-6 rounded-xl flex items-center justify-between group hover:bg-white/[0.06] transition-all">
+                            <div class="flex gap-6">
+                                <div class="w-32 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+                                    <div class="w-full h-full bg-cover bg-center"
+                                        data-alt="A cinematic capture of a frozen landscape within a video game, featuring sharp obsidian mountains and a sky filled with a green aurora borealis. In the center, a fallen frost dragon is partially covered by snow, its scales glistening with ice crystals. The lighting is cinematic and cold, emphasizing high-fidelity textures and atmospheric depth in a high-budget fantasy RPG style."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoIXh8bx7ICK248kpWl1Bf6hyfegzOVr0m2dSxJe-Fz-I32WgXEclNsSzhv3PL8mQPEs5yGGIu6fg7HSlnW2nU0h-BrX8mQDTugZX_WFjTMirdJQrbO0ywrJ3ybAywCf6duDeTsn7MooDpFMMusyJJDQ2TddO5nrJ46Y9-Raye6c6IyqlfeoqsSxpmgusv2VeH_03IziLR-3Hx3rUr4l8RBWPjeLL7GpBvBfLTzyirW1PU89IlAaC3StU2mqa1eGnldump3goqDm0')">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-tertiary text-label-sm font-bold uppercase">Epic Moment</span>
+                                        <span class="text-on-surface-variant/40">•</span>
+                                        <span class="text-on-surface-variant/60 text-label-sm">14:22 UTC</span>
+                                    </div>
+                                    <h4 class="font-headline-sm text-body-lg font-bold">The Fall of Skadi the Frozen
+                                    </h4>
+                                    <p class="text-on-surface-variant text-label-md">You landed a critical headshot
+                                        using the 'Arrow of Dawn' after 12 minutes of combat.</p>
+                                </div>
+                            </div>
+                            <button
+                                class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">play_circle</button>
+                        </div>
+                        <!-- Insight 2 -->
+                        <div
+                            class="glass-card ml-10 p-6 rounded-xl flex items-center justify-between group hover:bg-white/[0.06] transition-all">
+                            <div class="flex gap-6">
+                                <div class="w-32 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+                                    <div class="w-full h-full bg-cover bg-center"
+                                        data-alt="An intricately detailed interior of a medieval fantasy town gatehouse. Heavy wooden doors are reinforced with dark iron, and lanterns hang from the ceiling casting a warm amber glow on stone walls. Soldiers in armor can be seen patrolling in the soft-focus background, while the foreground shows high-resolution textures of cobblestone and wooden beams. The mood is safe and welcoming, contrasted against a cold exterior."
+                                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDk0IRf39m4zUKyJMnrLItWawNwT7xtXMrTBYUBqIynBpuTsDwkl41c_U0S71__ge3r7NqD5yARXqLK-qR_9bncmjXDy0Nxs72wXaCwg_cFtdXs3erFYrIVIB66YSfAx0gh0JRq6G7XrXA2PAbluiA4douKW5xPMY7MCK1G2bEpHSyk7294MMxEjVgZLVRZDtg2TYmYeN_BiRHme6JwGpjIV80Fbjp9nykMfPmXvebA524cHZFMOiaZ3yA9PAU21iXqA6DMqq1AEcc')">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-primary text-label-sm font-bold uppercase">Discovery</span>
+                                        <span class="text-on-surface-variant/40">•</span>
+                                        <span class="text-on-surface-variant/60 text-label-sm">15:05 UTC</span>
+                                    </div>
+                                    <h4 class="font-headline-sm text-body-lg font-bold">Entered Frost City</h4>
+                                    <p class="text-on-surface-variant text-label-md">Gained access to the Northern Hub.
+                                        Captain Arlen initiated 'The Temple Trials' questline.</p>
+                                </div>
+                            </div>
+                            <button
+                                class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">play_circle</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../js/continue_journey.js"></script>
+</body>
+
+</html>

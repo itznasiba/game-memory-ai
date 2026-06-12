@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+    <head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Elden Ring - Game Memory AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/game_details.css">
+<script id="tailwind-config" src="../js/game_details.config.js"></script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md selection:bg-primary/30">
+<!-- SideNavBar -->
+<aside class="h-full w-64 fixed left-0 top-0 border-r border-white/10 bg-surface/10 backdrop-blur-xl shadow-2xl flex flex-col py-8 px-4 z-50">
+<div class="mb-10 px-2 flex items-center gap-3">
+<img alt="Game Memory AI Logo" class="w-8 h-8 rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+<span class="text-headline-md font-headline-md font-bold text-primary">Game Memory AI</span>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant group" href="dashboard.html">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">dashboard</span>
+<span class="text-label-md font-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg text-primary font-bold border-r-2 border-primary bg-white/5 transition-all duration-200 active:scale-95" href="my_games.html">
+<span class="material-symbols-outlined">videogame_asset</span>
+<span class="text-label-md font-label-md">My Games</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant" href="memories.html">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span class="text-label-md font-label-md">Memories</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant" href="timeline.html">
+<span class="material-symbols-outlined">timeline</span>
+<span class="text-label-md font-label-md">Journey Timeline</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant" href="continue_journey.html">
+<span class="material-symbols-outlined">play_arrow</span>
+<span class="text-label-md font-label-md">Continue Journey</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant" href="upload_memory.html">
+<span class="material-symbols-outlined">cloud_upload</span>
+<span class="text-label-md font-label-md">Upload Memory</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant" href="achievements.html">
+<span class="material-symbols-outlined">emoji_events</span>
+<span class="text-label-md font-label-md">Achievements</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-white/5 hover:text-primary transition-all duration-200 text-on-surface-variant mt-auto" href="settings.html">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-label-md font-label-md">Settings</span>
+</a>
+</nav>
+<div class="mt-8 pt-6 border-t border-white/10 flex items-center gap-3 px-2">
+<img alt="User profile photo" class="w-10 h-10 rounded-full border border-primary/20" data-alt="A professional portrait of a tech-savvy gamer with a focused expression, wearing high-end headphones. The lighting is moody with purple and blue rim lighting that complements the dark-mode UI design. The background is a blurred office setup with soft LED light strips." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2PSze0LQFCJXXz8tbtR14ZSnWIr1Uo7Br3SU8GY9aUKsgruQF-CBvVOs1ZLsRvaBl8Zda2CwXuz5lCawEzoWWn28fhGZkE1xVipcCx29JWuaDfeWqy6IsXdiSVGpzG5WimC1Eq2xTFTeerB_DulT-xvyfdbeDFVF9tc_bjMM7tIHfUOASv6hZr0XUX6gEwOsmUh-FsVBGKApSraPvfxmEYtgS9jJe77E3YL97YJW225_hXh_glq7jXEwoR3qqONErdQguPuzcmrQ">
+<div>
+<p class="text-label-md font-label-md font-bold text-on-surface">Pro Gamer Elite</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Active Now</p>
+</div>
+</div>
+</aside>
+<!-- TopNavBar -->
+<header class="fixed top-0 right-0 w-[calc(100%-256px)] h-16 z-40 bg-background/80 backdrop-blur-md border-b border-white/5 flex justify-between items-center px-8">
+<div class="flex items-center w-full max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-sm">search</span>
+<input class="w-full bg-black/20 border border-white/10 rounded-full py-1.5 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/50 focus:outline-none transition-all" placeholder="Search Elden Ring memories..." type="text">
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-on-surface-variant hover:text-primary transition-colors focus:ring-2 focus:ring-primary/50 rounded-full p-1">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="flex items-center gap-3">
+<span class="text-label-md font-label-md text-on-surface-variant">Elden Ring</span>
+<span class="material-symbols-outlined text-on-surface-variant">account_circle</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="ml-64 pt-24 px-8 pb-16 max-w-[1400px] mx-auto grid grid-cols-12 gap-8">
+<!-- Left Column: Story & History -->
+<div class="col-span-12 lg:col-span-8 space-y-12">
+<!-- Hero Header Section -->
+<section class="relative h-64 rounded-2xl overflow-hidden glass group">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="An epic cinematic landscape from a dark fantasy RPG similar to Elden Ring. A lone warrior stands on a cliff overlooking a vast, mist-covered valley with a giant glowing golden tree in the distance. The atmosphere is somber and majestic, with deep blues and brilliant gold highlights reflecting the game's core visual theme." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIzAHr_Zx7gi7E-oSNnRI35PIQAZU_13hKlZX9Rr-Aq_7IORn0LjE5WoCpjF8wUreX-g4_aVLRQZA5w8VprS7LjxYQPk7iL-myms4HMLjeLzzw2TnENLCfiGMsATcc4nW1j9wWxSAIhrAX_Pn4nRTvfTSRtKp8CoeO1hlwdDku30EEhjK2ya3ojVO4R1ziLz3qsgqbr7P6vK78-delc4ziDbz8aK22TIy_N_Qc23_VO7JiPwnYR7iZ1Rvx7fEmZOlgt51ZjoefFQY')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+<div class="absolute bottom-6 left-8">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary/20 text-primary text-[10px] font-bold rounded uppercase tracking-tighter">Current Game</span>
+<span class="px-2 py-0.5 bg-tertiary/20 text-tertiary text-[10px] font-bold rounded uppercase tracking-tighter">Live Insight</span>
+</div>
+<h1 class="font-display text-display text-white mb-2">Elden Ring</h1>
+<p class="text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">schedule</span> 142 hours played
+                    </p>
+</div>
+</section>
+<!-- Story Timeline -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">timeline</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Story Timeline</h2>
+</div>
+<div class="relative ml-4 space-y-8 before:absolute before:left-0 before:top-2 before:bottom-2 before:w-[1px] before:bg-gradient-to-b before:from-primary before:via-secondary before:to-transparent">
+<!-- Timeline Item -->
+<div class="relative pl-8 group">
+<div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-primary ring-4 ring-primary/20 group-hover:scale-125 transition-transform"></div>
+<div class="glass p-5 rounded-xl glass-hover">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-label-md font-bold text-on-surface">Defeated Margit, the Fell Omen</h3>
+<span class="text-[10px] text-on-surface-variant uppercase">Oct 14, 2023</span>
+</div>
+<p class="text-body-md text-on-surface-variant">First major hurdle cleared at Stormveil gates. AI Note: Your dodge timing improved significantly during the second phase.</p>
+</div>
+</div>
+<!-- Timeline Item -->
+<div class="relative pl-8 group">
+<div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-secondary ring-4 ring-secondary/20 group-hover:scale-125 transition-transform"></div>
+<div class="glass p-5 rounded-xl glass-hover">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-label-md font-bold text-on-surface">Entered Liurnia of the Lakes</h3>
+<span class="text-[10px] text-on-surface-variant uppercase">Oct 18, 2023</span>
+</div>
+<p class="text-body-md text-on-surface-variant">The mist lifted to reveal the Academy of Raya Lucaria. AI recorded a significant increase in exploration duration here.</p>
+</div>
+</div>
+<!-- Timeline Item -->
+<div class="relative pl-8 group">
+<div class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-on-surface-variant/40 group-hover:bg-primary transition-colors"></div>
+<div class="glass p-5 rounded-xl glass-hover">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-label-md font-bold text-on-surface">Conquered Starscourge Radahn</h3>
+<span class="text-[10px] text-on-surface-variant uppercase">Nov 2, 2023</span>
+</div>
+<p class="text-body-md text-on-surface-variant">The Festival of War concluded in the Caelid wilds. AI Highlight: The cinematic transition to the underground crater was captured as a core memory.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Memory Cards Grid (Bento Style) -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Memory Fragments</h2>
+</div>
+<button class="text-label-md text-primary font-bold hover:underline">View Gallery</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="glass rounded-xl overflow-hidden h-48 relative group">
+<div class="glow-point"></div>
+<img alt="Memory Card" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A high-contrast gaming screenshot of a dark, gothic throne room. A menacing figure sits on a stone throne, surrounded by flickering torches casting long, dramatic shadows. The aesthetic is gritty and atmospheric, aligning with a dark-fantasy world-building style. Deep purples and blacks dominate the scene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_LXCwlsTaQNXocIfmpNIgMS-svM2O0HIuauCgjkypnlcsBe_o6XRL8wWav7UTbjOKI7yuHV3HtYbKLf-4zVLuh7E3cJ2u9oP_InF_Ktbu3jzQCUonOHfG0if96IzY8qPyoyl7HIUgKgaQjAosnf9xN5zfOUKFebNb0Ej864RBBb5jlqnul230KTXVIKeEytG3QBmSDej4OwH0_FtdNTT5jFn2KFiq6DNb58Hu-Tbgtkq5qPPBmURpO2hA5zrNq1SFjQU6NdFBapY">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-[10px] text-primary uppercase font-bold">Boss Fight</p>
+<p class="text-label-sm">Malenia Phase 1 Entry</p>
+</div>
+</div>
+<div class="glass rounded-xl overflow-hidden h-48 relative group col-span-1 md:col-span-2">
+<img alt="Memory Card" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A wide panoramic shot of a mystical forest with bioluminescent plants glowing in shades of neon blue and soft violet. A small clearing features a campfire crackling, sending embers into a star-filled sky. The mood is peaceful and enchanting, capturing a moment of respite in a dangerous world. High-quality digital render style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaX7FA1bcYFdhRYVuFApxgv5IKvizChG_SKOZJmc4SM2qB76p2ciTBVmnKk8yQ9Fus7ctzGcAq2y6_paFS4B5ERAxwwTNLkmKU9UUDNPjPs6xqv2ZSLbfOzLxzdzhlkvHpJYtCePIWjtO6nok-LUSHU6NtOx88CcuY_KiSeIcggoXkbrn7x3wvTHA2r68GBsbjE9lGDQSFtK2WwXYlt0LBvbB6U1odwo-lZTjv0hE4Hn_qG6-jG3-ohBG85d-0qZE39efo7tsd_5w">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-[10px] text-primary uppercase font-bold">Discovery</p>
+<p class="text-label-sm">Siofra River Night Sky</p>
+</div>
+</div>
+<div class="glass rounded-xl overflow-hidden h-48 relative group">
+<img alt="Memory Card" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="An abstract visualization of digital data flowing through a network, represented as glowing lines of code and geometric pulses in a deep void. This represents the AI's processing of game data. The colors are predominantly electric blue and vibrant purple, creating a sleek, futuristic tech vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2DsVhV53RkVQ521QbQXayXQ8U2KstDWwS36Ega9quOfIKDGKA4NE38JKaCSrKqkO7r5LcLXHJk1gwmEVEbFj7dmTUCyE9gai-uIDGrk3xHuqPM2ZwfSYUezHGYvYHWbIrt6N0A8BWw8ZMZNLPKL5EryM8yfucVD_q31GGd8-rgDQPeVcIDc-sNnRnWoyAbtR3c-MfU7GQ445K3X3jjMs61zEWQCWpntT7lo95KkcVK8UHSbf3hXrdeHh_ZGZGD9YSq4ywcl_N4GI">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-[10px] text-primary uppercase font-bold">Insight</p>
+<p class="text-label-sm">Stat Build Analysis</p>
+</div>
+</div>
+<div class="glass rounded-xl overflow-hidden h-48 relative group">
+<img alt="Memory Card" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A close-up of a futuristic console interface displaying complex game statistics, experience bars, and skill trees. The UI elements are sleek, with glass textures and neon accents. The background is a dark, tech-oriented laboratory. It conveys the feeling of high-end performance monitoring and pro-gaming analytics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuLGO_twi_YWLA14iFhnYkcy9KMzYU_x13wXbDxz7Lk3AJwUMEYaDJIH9FgeOTJKLSOGtgiacCUfvEIoiMfzoh5JuSJRZRRANOaBFqFabKJcEfPZLs0nNlkd00_I0Q-2yAV4agW0iQCOw4fiUU0khfLz7XM3HecFkCBZ86MiEuAAR68SOkY0vZKB1zjtsFGgiqU4KgHOxiTriAlGjqz-Em2YibaZs8C87jg_RlZFK5XFFdTYSpCBdOA5QZNwL5xJ5E1D2IxRgiXo4">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-[10px] text-primary uppercase font-bold">Archive</p>
+<p class="text-label-sm">Final Build - Level 150</p>
+</div>
+</div>
+<div class="glass rounded-xl overflow-hidden h-48 relative group">
+<img alt="Memory Card" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A cinematic capture of a character in intricate plate armor kneeling before a glowing altar in a crumbling stone cathedral. Sunlight streams through broken stained glass, creating rays of light that illuminate dust motes in the air. The scene is solemn and holy, blending epic fantasy with quiet introspection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGIEohG9rNxbf1XXtF57Xhr4ic1PoCZ98r8giiNfWwWIX8qpjIU-wnsjV5vfbC5pHub1J8ieLtMgFWYYiv4QEey7kh0IpJRz_sOpLssSAX5S3eSTJGBnz_3dcs9Hv7zl1WpDQIWvgWUDDK2rIcVbjBKGZ8Orj3yZwQyaCFJDKBxb7EvEi80jE-Mn4b3ytc9PShY1y_2zwdO0JZ5uDxwoeT5HBHoIGB9A0_zxl1f6r-aj1STPiyh9a1LoHt4eEIJdNHyn-EFcj8_wU">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-[10px] text-primary uppercase font-bold">Story</p>
+<p class="text-label-sm">Leyndell Throne Room</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Session History -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">history</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Recent Sessions</h2>
+</div>
+<div class="space-y-4">
+<div class="glass p-6 rounded-2xl flex flex-col md:flex-row gap-6 glass-hover">
+<div class="w-full md:w-32 h-20 rounded-lg bg-black/40 flex items-center justify-center border border-white/5 shrink-0">
+<span class="material-symbols-outlined text-3xl text-primary/50">videogame_asset</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-bold text-on-surface">Late Night Exploration: Subterranean Shunning-Grounds</h4>
+<span class="text-xs text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">Efficiency: 88%</span>
+</div>
+<p class="text-sm text-on-surface-variant line-clamp-2">You spent 4 hours navigating the sewers of Leyndell. AI Summary: Notable persistence shown during the Mohg fight attempt. You discovered three hidden passages and collected several high-value upgrade materials.</p>
+<div class="mt-4 flex gap-4">
+<span class="text-[10px] uppercase font-bold text-on-surface-variant/60 flex items-center gap-1"><span class="material-symbols-outlined text-sm">timer</span> 4h 12m</span>
+<span class="text-[10px] uppercase font-bold text-on-surface-variant/60 flex items-center gap-1"><span class="material-symbols-outlined text-sm">skull</span> 12 deaths</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Sticky Sidebar -->
+<div class="col-span-12 lg:col-span-4">
+<div class="sticky top-24 space-y-6">
+<!-- Current Objective Card -->
+<div class="glass p-6 rounded-2xl relative overflow-hidden">
+<div class="glow-point"></div>
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/10 blur-3xl -mr-12 -mt-12"></div>
+<h3 class="text-[10px] uppercase font-bold text-primary tracking-widest mb-4">Current Objective</h3>
+<p class="text-headline-md font-headline-md text-white mb-4 leading-tight">Find the Three Fingers in the Subterranean Shunning-Grounds.</p>
+<div class="flex items-center gap-2 text-on-surface-variant text-sm">
+<span class="material-symbols-outlined text-sm">location_on</span>
+<span>Leyndell, Royal Capital</span>
+</div>
+</div>
+<!-- Progress Tracker -->
+<div class="glass p-6 rounded-2xl">
+<div class="flex justify-between items-end mb-4">
+<div>
+<h3 class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest mb-1">Story Progress</h3>
+<p class="text-headline-md font-bold text-primary">72%</p>
+</div>
+<span class="text-xs text-on-surface-variant">Estimated 30h left</span>
+</div>
+<div class="w-full h-2 bg-black/40 rounded-full overflow-hidden border border-white/5">
+<div class="h-full bg-gradient-to-r from-primary to-secondary w-[72%] shadow-[0_0_10px_rgba(210,187,255,0.4)]"></div>
+</div>
+</div>
+<!-- AI Story Summary -->
+<div class="glass p-6 rounded-2xl">
+<h3 class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest mb-4">AI Story Summary</h3>
+<p class="text-body-md text-on-surface-variant italic leading-relaxed">
+                        "After the fall of Morgott, you've reached the foot of the Erdtree only to find it barred by thorns. Melina has guided you toward the Forbidden Lands, but your recent detour into the sewers suggests a growing interest in the Flame of Frenzy. The capital remains silent, but the weight of your choices is beginning to manifest in your interactions with the remaining Finger Readers."
+                    </p>
+</div>
+<!-- Important NPCs -->
+<div class="glass p-6 rounded-2xl">
+<h3 class="text-[10px] uppercase font-bold text-on-surface-variant tracking-widest mb-4">Key Characters</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/20 group-hover:border-primary transition-colors">
+<img alt="Melina" class="w-full h-full object-cover" data-alt="A detailed digital painting of a mysterious woman with long, pale hair and a delicate hooded cloak. She has a soft, ethereal glow about her. The style is reminiscent of high-fantasy character art with intricate fabric textures and subtle magical particles. The lighting is low-key, emphasizing a sense of mystery and destiny." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_tCi6k_bs9OuMB2UncB6OEBTn-GxAmVxo1Hgx9E0iAmx5j_495KGpx1VWDcw4fRCC7AOVdUDW0n4qeFA-O73NMRz4AH2IK0guTvyWyE06dY2iRo4Syx-CiCsK2sLHjURIoT-CPJGogj-p3NbwfYTu9FwHqFdgVfdTfNADmYt90jY7SgsIrsRta6eCP7ZYXV0edyvFw3NbPyBJNg4MjqXgVUB6YiFqBBldFbR3052T9hc9CEHTiwJpzp-B2UG_VtOHvBt_wGZ2vrk">
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface">Melina</p>
+<p class="text-[10px] text-tertiary">Current Companion</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-sm opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-on-surface-variant/20 group-hover:border-primary transition-colors">
+<img alt="Ranni" class="w-full h-full object-cover" data-alt="A stylized portrait of a mystical figure with blue-tinted skin and multiple glowing eyes, wearing an ornate, weathered wide-brimmed hat. The character has a serene yet otherworldly presence. The background is a dark starry night, and the overall color palette is dominated by cold blues and silver." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDblsSN_9SeHg2TcF9V7zXokjA7KVG1BRFHCNX6uNDWdLLK1l_NRf9eOnfpo1Y2Z5yajgXOgr8XiCh_oMw7VEsGQqs9oNO4layTUrwRrwRqi5hFpdjzmNgp3fLMawS3BrqRFJWxwzGmJ3VFtOA56WJYoGTYKVvsY92BGAnD-ZPNxdS00X_aP69XjWEnIF835zmwiP9_wHdzYjWTz_1TegvdcQr3jiyhVK0mIDtcVKxR6-ne6n0-E7MxvreqtTqjy_YVw4WM9RnK9Uk">
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface">Ranni the Witch</p>
+<p class="text-[10px] text-on-surface-variant">Quest Line: Active</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-sm opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-on-surface-variant/20 group-hover:border-primary transition-colors">
+<img alt="Alexander" class="w-full h-full object-cover" data-alt="An artistic rendering of a giant, sentient iron jar decorated with ornate patterns and cracks filled with golden light. It stands proudly in a desert-like landscape. The style is bold and heroic, capturing the quirky but noble nature of the character. High-detail metal textures and dust particles in the air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJXhhl3pc-xhOMOwCqogs44908hlnEVOqXYqDT_uYRVWXmJX5HM0LumH1iQDP8DcH0OqErbGU2B291ZFJPdJ-_a53UthxBPWxkdSz0aY1cdFfVeKD5g0s5CpgeleKTQbSjsBQWETSMKdy0S6Hd8iPXQoIzVVHCeZh7xZz4CViFLQIC9CmJ9bw3xTF9_HZcBCsSt4_-WPVEsagh3xj21h4AOdTzNoWsLPC-jD-EnQrYLwxQpBoy8c5LVrkVEQ3mqUGRrpAVhpV4xsY">
+</div>
+<div class="flex-1">
+<p class="text-sm font-bold text-on-surface">Iron Fist Alexander</p>
+<p class="text-[10px] text-on-surface-variant">Last seen: Mt. Gelmir</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-sm opacity-0 group-hover:opacity-100 transition-opacity">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full bg-primary-container text-white py-4 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-lg hover:brightness-110 active:scale-95 transition-all group">
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-weight="fill">play_arrow</span>
+                    Continue Journey
+                </button>
+</div>
+</div>
+</main>
+<!-- Micro-interaction Scripts -->
+<script src="../js/game_details.js"></script>
+</body>
+
+</html>
