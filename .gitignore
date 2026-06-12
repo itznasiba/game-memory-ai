@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment
+.env
+
+# Uploads
+game-memory-backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
