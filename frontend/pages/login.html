@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config" src="../js/login.config.js"></script>
 <link rel="stylesheet" href="../css/login.css">
+<script src="../js/mock-data.js"></script>
 </head>
 
 <body class="bg-background text-on-surface h-screen">
@@ -74,7 +75,8 @@
 <p class="font-body-md text-body-md text-on-surface-variant">Welcome back to your personal gaming archive.</p>
 </div>
 <!-- Login Form -->
-<form class="space-y-6" onsubmit="event.preventDefault();">
+<form class="space-y-6" id="login-form">
+<p class="hidden text-error text-label-md font-label-md bg-error/10 border border-error/20 rounded-xl px-4 py-2.5" id="login-error"></p>
 <div class="space-y-1.5">
 <label class="font-label-md text-label-md text-on-surface-variant ml-1" for="email">Email Address</label>
 <input class="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary/50 transition-all font-body-md" id="email" placeholder="commander@normandy.com" type="email">
@@ -114,7 +116,7 @@
 </div>
 <!-- Footer Link -->
 <p class="text-center mt-10 font-label-md text-label-md text-on-surface-variant">
-                        Don't have an account? <a class="text-primary font-bold hover:underline underline-offset-4" href="#">Create one</a>
+                        Don't have an account? <a class="text-primary font-bold hover:underline underline-offset-4" href="register.html">Create one</a>
 </p>
 </div>
 </div>

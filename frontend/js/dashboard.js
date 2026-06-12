@@ -1,4 +1,15 @@
 
+        // Prepend the most recently uploaded mock memory to the Recent Memories grid
+        const recentGrid = document.getElementById('recent-memories-grid');
+        if (recentGrid) {
+            const memories = MockMemories.getAll();
+            if (memories.length) {
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = MockMemories.dashboardCardHTML(memories[0]);
+                recentGrid.insertBefore(wrapper.firstElementChild, recentGrid.firstChild);
+            }
+        }
+
         // Micro-interaction for memory cards lifting effect
         document.querySelectorAll('.glass-surface').forEach(card => {
             card.addEventListener('mouseenter', () => {

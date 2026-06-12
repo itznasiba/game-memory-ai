@@ -1,4 +1,9 @@
 
+        // Reflect uploaded mock memories in the game cards' stats
+        document.addEventListener('DOMContentLoaded', () => {
+            MockMemories.syncGameCards();
+        });
+
         // Micro-interaction for hover effects on glass cards
         document.querySelectorAll('.game-card').forEach(card => {
             card.addEventListener('mousemove', (e) => {

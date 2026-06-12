@@ -1,6 +1,17 @@
 
         // Micro-interactions for the timeline
         document.addEventListener('DOMContentLoaded', () => {
+            // Insert uploaded mock memories as milestones just before the "Current State" block
+            const currentStateBlock = document.getElementById('current-state-block');
+            if (currentStateBlock) {
+                const memories = MockMemories.getAll();
+                memories.slice().reverse().forEach(memory => {
+                    const wrapper = document.createElement('div');
+                    wrapper.innerHTML = MockMemories.timelineMilestoneHTML(memory);
+                    currentStateBlock.parentNode.insertBefore(wrapper.firstElementChild, currentStateBlock);
+                });
+            }
+
             const cards = document.querySelectorAll('.glass-card');
 
             const observerOptions = {

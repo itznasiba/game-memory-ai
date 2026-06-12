@@ -1,4 +1,26 @@
 
+        // Render uploaded mock memories into the library grid
+        const memoriesGrid = document.getElementById('memories-grid');
+        const uploadBtn = document.getElementById('upload-memory-btn');
+        if (memoriesGrid) {
+            const memories = MockMemories.getAll();
+            memories.forEach(memory => {
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = MockMemories.cardHTML(memory);
+                const card = wrapper.firstElementChild;
+                if (uploadBtn) {
+                    memoriesGrid.insertBefore(card, uploadBtn);
+                } else {
+                    memoriesGrid.appendChild(card);
+                }
+            });
+        }
+        if (uploadBtn) {
+            uploadBtn.addEventListener('click', () => {
+                window.location.href = 'upload_memory.html';
+            });
+        }
+
         // Smooth entrance for AI insights
         window.addEventListener('load', () => {
             setTimeout(() => {

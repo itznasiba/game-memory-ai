@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="../css/register.css">
 <script id="tailwind-config" src="../js/register.config.js"></script>
+<script src="../js/mock-data.js"></script>
 </head>
 <body class="bg-background text-on-background min-h-screen flex">
 <!-- Left Side: Immersive Branding Panel -->
@@ -74,23 +75,24 @@
 <p class="text-sm text-on-surface-variant mt-2 font-medium">Begin your journey into the archives.</p>
 </div>
 <!-- Form -->
-<form class="space-y-5" onsubmit="event.preventDefault();">
+<form class="space-y-5" id="register-form">
+<p class="hidden text-error text-label-md font-label-md bg-error/10 border border-error/20 rounded-xl px-4 py-2.5" id="register-error"></p>
 <div class="space-y-1.5">
 <label class="text-[12px] uppercase tracking-widest font-bold text-on-surface-variant ml-1">Full Name</label>
-<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" placeholder="Commander Shepard" type="text"/>
+<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" id="register-name" placeholder="Commander Shepard" type="text"/>
 </div>
 <div class="space-y-1.5">
 <label class="text-[12px] uppercase tracking-widest font-bold text-on-surface-variant ml-1">Email Address</label>
-<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" placeholder="spectre@citadel.com" type="email"/>
+<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" id="register-email" placeholder="spectre@citadel.com" type="email"/>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 <div class="space-y-1.5">
 <label class="text-[12px] uppercase tracking-widest font-bold text-on-surface-variant ml-1">Password</label>
-<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" placeholder="••••••••" type="password"/>
+<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" id="register-password" placeholder="••••••••" type="password"/>
 </div>
 <div class="space-y-1.5">
 <label class="text-[12px] uppercase tracking-widest font-bold text-on-surface-variant ml-1">Confirm</label>
-<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" placeholder="••••••••" type="password"/>
+<input class="w-full h-12 px-4 rounded-xl glass-input text-on-surface placeholder:text-outline-variant/50 focus:ring-0" id="register-confirm" placeholder="••••••••" type="password"/>
 </div>
 </div>
 <div class="flex items-start gap-3 py-2">
@@ -127,8 +129,8 @@
 <!-- Footer -->
 <div class="mt-10 text-center">
 <p class="text-sm text-on-surface-variant">
-                        Already have an account? 
-                        <a class="text-primary font-bold hover:underline ml-1" href="#">Sign in</a>
+                        Already have an account?
+                        <a class="text-primary font-bold hover:underline ml-1" href="login.html">Sign in</a>
 </p>
 </div>
 </div>

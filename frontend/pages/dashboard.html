@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/dashboard.css">
     <script id="tailwind-config" src="../js/dashboard.config.js"></script>
+    <script src="../js/mock-data.js"></script>
 </head>
 
 <body class="bg-background text-on-background">
@@ -181,7 +182,7 @@
                     <h4 class="text-headline-md font-headline-md">Recent Memories</h4>
                     <a class="text-label-md font-label-md text-primary hover:underline" href="#">View All</a>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-2 gap-6" id="recent-memories-grid">
                     <!-- Memory Card 1 -->
                     <div class="glass-surface p-6 rounded-2xl flex flex-col gap-4 group">
                         <div class="h-40 rounded-xl overflow-hidden relative">
