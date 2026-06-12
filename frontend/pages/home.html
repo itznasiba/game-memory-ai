@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Game Memory AI - Never Forget Your Journey</title>
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" src="../js/home.config.js"></script>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+
+<body class="selection:bg-primary selection:text-on-primary">
+  <!-- TopNavBar Implementation -->
+  <header
+    class="fixed top-0 right-0 w-full md:w-[calc(100%-256px)] h-16 z-40 bg-background/80 backdrop-blur-md border-b border-white/5 flex justify-between items-center px-8">
+    <div class="flex items-center gap-4">
+      <img alt="Game Memory AI Logo" class="h-8 w-auto"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+      <span class="text-headline-md font-headline-md font-bold text-primary">Game Memory AI</span>
+    </div>
+    <div class="flex items-center gap-6">
+      <div class="hidden md:flex gap-4">
+        <button
+          class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">notifications</button>
+        <button
+          class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">account_circle</button>
+      </div>
+      <div class="h-8 w-8 rounded-full overflow-hidden border border-white/10">
+        <img alt="User avatar" class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZnTAt1lAXhW9mlqf4VcUFVG6V0gKBco9-SM3V-BPS-FhdXe2mjJU4UQw3fanoQdQd-5ATycGcSEOfyiRtIihOFjuNK6dhqle8tl5iKvz_qOZUX-s1KELiFHHfvHafGmnyRSILQ9v31o2FqblgaBCKcneJPir6zlH4yEE9_nTr5CqDr6DdZGjUqpJ7qlZxKCFMi1jKlbHGEOgsJwfAXsmd00XIkos4YDPnF_ulCDMFnSLoI999f5ZFAp-6-sWJUJWiv1XrLrzxQ_0">
+      </div>
+    </div>
+  </header>
+  <!-- SideNavBar Implementation (Desktop Only) -->
+  <aside
+    class="hidden md:flex h-full w-64 fixed left-0 top-0 border-r border-white/10 bg-surface/10 backdrop-blur-xl flex-col py-8 px-4 z-50">
+    <div class="flex flex-col mb-12 px-2">
+      <div class="text-headline-md font-headline-md font-bold text-primary mb-1">Game Memory AI</div>
+      <div class="text-label-md font-label-md text-on-surface-variant">Pro Gamer Elite</div>
+    </div>
+    <nav class="flex-1 space-y-2">
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-primary font-bold border-r-2 border-primary bg-white/5 scale-95 transition-all"
+        href="dashboard.html">
+        <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+        <span class="text-label-md font-label-md">Dashboard</span>
+      </a>
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all group"
+        href="my_games.html">
+        <span class="material-symbols-outlined group-hover:scale-110 transition-transform"
+          data-icon="videogame_asset">videogame_asset</span>
+        <span class="text-label-md font-label-md">My Games</span>
+      </a>
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all group"
+        href="memories.html">
+        <span class="material-symbols-outlined group-hover:scale-110 transition-transform"
+          data-icon="auto_awesome">auto_awesome</span>
+        <span class="text-label-md font-label-md">Memories</span>
+      </a>
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all group"
+        href="timeline.html">
+        <span class="material-symbols-outlined group-hover:scale-110 transition-transform"
+          data-icon="timeline">timeline</span>
+        <span class="text-label-md font-label-md">Journey Timeline</span>
+      </a>
+      <div class="py-4 px-4 border-t border-white/5 mt-4">
+        <span class="text-[10px] uppercase tracking-widest text-outline">Actions</span>
+      </div>
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all group"
+        href="continue_journey.html">
+        <span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+        <span class="text-label-md font-label-md">Continue Journey</span>
+      </a>
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all group"
+        href="upload_memory.html">
+        <span class="material-symbols-outlined" data-icon="cloud_upload">cloud_upload</span>
+        <span class="text-label-md font-label-md">Upload Memory</span>
+      </a>
+    </nav>
+    <div class="pt-8 border-t border-white/5">
+      <a class="flex items-center gap-3 py-3 px-4 rounded-lg text-on-surface-variant hover:bg-white/5 transition-all group"
+        href="settings.html">
+        <span class="material-symbols-outlined" data-icon="settings">settings</span>
+        <span class="text-label-md font-label-md">Settings</span>
+      </a>
+    </div>
+  </aside>
+  <!-- Main Canvas Content -->
+  <main class="md:ml-64 pt-16 min-h-screen bg-void overflow-x-hidden">
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[85vh] flex flex-col items-center justify-center text-center px-6 md:px-margin-desktop overflow-hidden">
+      <!-- Background Animation Placeholder -->
+
+      <div class="relative z-10 max-w-4xl space-y-stack-lg">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-label-sm uppercase mb-stack-md">
+          <span class="glow-point"></span>
+          AI Companion Live
+        </div>
+        <h1 class="font-display text-display md:text-[84px] leading-tight text-on-background max-w-4xl tracking-tight">
+          Never Forget Your <span class="text-primary italic">Journey</span>
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto opacity-80">
+          AI remembers every quest, character and decision so you can continue exactly where you left off, even years
+          later.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-gutter justify-center items-center pt-stack-md">
+          <button
+            class="h-14 px-10 bg-primary-container text-on-primary-container font-label-md rounded-xl primary-glow hover:scale-105 active:scale-95 transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+            Continue Journey
+          </button>
+          <button
+            class="h-14 px-10 border border-white/10 bg-white/5 backdrop-blur-md font-label-md rounded-xl hover:bg-white/10 active:scale-95 transition-all flex items-center gap-2">
+            <span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+            Add New Memory
+          </button>
+        </div>
+      </div>
+      <!-- Visual Anchor -->
+      <div class="mt-20 w-full max-w-5xl relative">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary-container rounded-2xl blur-2xl opacity-20">
+        </div>
+        <div class="glass-surface p-2 rounded-2xl transition-all duration-700 opacity-100 translate-y-0">
+          <img class="w-full h-auto rounded-xl grayscale-[20%] hover:grayscale-0 transition-all duration-700"
+            data-alt="A high-fidelity cinematic screen capture of an expansive open-world fantasy RPG environment. The scene shows a character standing on a cliff edge overlooking a misty, bioluminescent forest under a starry nebula sky. The UI overlay is translucent, showing AI-identified objectives and character relationship markers in a sophisticated purple and blue aesthetic. The atmosphere is immersive, epic, and highly detailed."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtPrsS_Ys2E6xOKfTW5a9vkfjS7I-MX6XYtgQ9ksmFOGfd6m_IQ-r9eZbg6D5692usGMpQu7hJ7yOo7GEuNW_7YGl-jcgN00Q1Tjh6kNAsvPDetfp2ciHB4gb2RgjUOj-ZOHyWm2U_VAMgwKu-8Jqxsrt9YPECCfAa489OIdaSoQMxh1k_qxb-lL4FdmetP1idR8KgDGly4Zy7dSDw4YO8AfQefAuG4nxbfrVedu3CJrVxoe40dAnHcsjAb7HtE4CQuBCSno3fc_c">
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="py-24 px-6 md:px-margin-desktop bg-background/50">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+        <!-- Stat Card 1 -->
+        <div
+          class="glass-surface p-8 rounded-2xl flex flex-col items-center justify-center text-center group opacity-0 translate-y-10 transition-all duration-700">
+          <div class="p-3 bg-primary/10 rounded-xl mb-4 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-primary" data-icon="save">save</span>
+          </div>
+          <div class="text-[40px] font-bold text-on-background leading-none mb-2">1,284</div>
+          <div class="text-label-md text-on-surface-variant font-medium">Memories Saved</div>
+        </div>
+        <!-- Stat Card 2 -->
+        <div
+          class="glass-surface p-8 rounded-2xl flex flex-col items-center justify-center text-center group opacity-0 translate-y-10 transition-all duration-700">
+          <div class="p-3 bg-secondary-container/10 rounded-xl mb-4 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-secondary" data-icon="assignment">assignment</span>
+          </div>
+          <div class="text-[40px] font-bold text-on-background leading-none mb-2">156</div>
+          <div class="text-label-md text-on-surface-variant font-medium">Main Quests Remembered</div>
+        </div>
+        <!-- Stat Card 3 -->
+        <div
+          class="glass-surface p-8 rounded-2xl flex flex-col items-center justify-center text-center group opacity-0 translate-y-10 transition-all duration-700">
+          <div class="p-3 bg-tertiary-container/10 rounded-xl mb-4 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-tertiary" data-icon="groups">groups</span>
+          </div>
+          <div class="text-[40px] font-bold text-on-background leading-none mb-2">842</div>
+          <div class="text-label-md text-on-surface-variant font-medium">Characters Tracked</div>
+        </div>
+        <!-- Stat Card 4 -->
+        <div
+          class="glass-surface p-8 rounded-2xl flex flex-col items-center justify-center text-center group opacity-0 translate-y-10 transition-all duration-700">
+          <div class="p-3 bg-error-container/10 rounded-xl mb-4 group-hover:scale-110 transition-transform">
+            <span class="material-symbols-outlined text-error" data-icon="schedule">schedule</span>
+          </div>
+          <div class="text-[40px] font-bold text-on-background leading-none mb-2">3</div>
+          <div class="text-label-md text-on-surface-variant font-medium">Days Since Last Session</div>
+        </div>
+      </div>
+    </section>
+    <!-- Process Section -->
+    <section class="py-32 px-6 md:px-margin-desktop relative overflow-hidden">
+      <div class="max-w-xl mb-20">
+        <h2 class="font-headline-lg text-headline-lg text-on-background mb-4">The Intelligent Lifecycle</h2>
+        <p class="text-on-surface-variant font-body-md opacity-70">Our proprietary neural engine decodes your playstyle
+          to create a living record of your digital self.</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-12 relative">
+        <!-- Connecting Line for timeline -->
+        <div class="hidden lg:block absolute top-12 left-0 right-0 h-px timeline-gradient opacity-20 z-0"></div>
+        <!-- Step 1 -->
+        <div class="relative z-10 space-y-6">
+          <div
+            class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold shadow-lg shadow-primary/20">
+            1</div>
+          <div
+            class="glass-surface p-6 rounded-2xl border-l-4 border-l-primary opacity-0 translate-y-10 transition-all duration-700">
+            <div class="material-symbols-outlined text-primary mb-4 text-[32px]" data-icon="upload_file">upload_file
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-2">Upload Screenshot</h3>
+            <p class="text-label-md text-on-surface-variant">Simply drag gameplay caps. Our AI extracts context from
+              your current screen.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="relative z-10 space-y-6">
+          <div
+            class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold border border-primary/30">
+            2</div>
+          <div
+            class="glass-surface p-6 rounded-2xl border-l-4 border-l-secondary opacity-0 translate-y-10 transition-all duration-700">
+            <div class="material-symbols-outlined text-secondary mb-4 text-[32px]" data-icon="psychology">psychology
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-2">AI Contextual Analysis</h3>
+            <p class="text-label-md text-on-surface-variant">Neural analysis of story arcs, character motivations, and
+              current objectives.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="relative z-10 space-y-6">
+          <div
+            class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold border border-primary/30">
+            3</div>
+          <div
+            class="glass-surface p-6 rounded-2xl border-l-4 border-l-tertiary opacity-0 translate-y-10 transition-all duration-700">
+            <div class="material-symbols-outlined text-tertiary mb-4 text-[32px]" data-icon="auto_awesome_motion">
+              auto_awesome_motion</div>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-2">Memory Is Saved</h3>
+            <p class="text-label-md text-on-surface-variant">A structured, searchable timeline of your adventure is
+              generated automatically.</p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="relative z-10 space-y-6">
+          <div
+            class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-bold border border-primary/30">
+            4</div>
+          <div
+            class="glass-surface p-6 rounded-2xl border-l-4 border-l-primary opacity-0 translate-y-10 transition-all duration-700">
+            <div class="material-symbols-outlined text-primary mb-4 text-[32px]" data-icon="history_edu">history_edu
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-2">Continue Anytime</h3>
+            <p class="text-label-md text-on-surface-variant">Pick up exactly where you left off, with an AI summary to
+              refresh your mind.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bento Grid Highlight Section -->
+    <section class="py-32 px-6 md:px-margin-desktop bg-surface-container-lowest">
+      <div class="grid grid-cols-12 gap-gutter max-w-container-max-width mx-auto">
+        <div
+          class="col-span-12 lg:col-span-8 glass-surface rounded-3xl p-10 overflow-hidden relative min-h-[400px] opacity-0 translate-y-10 transition-all duration-700">
+          <div class="relative z-10 max-w-md">
+            <h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Interactive Timeline</h2>
+            <p class="text-on-surface-variant mb-8 font-body-md">Visualize your journey through space and time. Our AI
+              maps your decisions onto a branching narrative graph.</p>
+            <button class="text-primary flex items-center gap-2 font-label-md hover:translate-x-2 transition-transform">
+              Explore Narrative Graphs
+              <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </div>
+          <div class="absolute right-0 bottom-0 top-0 w-1/2 opacity-40">
+
+          </div>
+        </div>
+        <div
+          class="col-span-12 lg:col-span-4 glass-surface rounded-3xl p-10 flex flex-col justify-between opacity-0 translate-y-10 transition-all duration-700">
+          <div>
+            <div class="p-3 bg-tertiary/10 rounded-xl w-fit mb-6">
+              <span class="material-symbols-outlined text-tertiary" data-icon="security">security</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-4">Zero-Knowledge Storage</h3>
+            <p class="text-on-surface-variant text-label-md">Your memories are encrypted locally. We don't see your
+              data, our AI only processes it to help you.</p>
+          </div>
+          <div class="mt-8 pt-8 border-t border-white/5">
+            <div class="flex -space-x-3">
+              <img alt="User feedback 1" class="w-10 h-10 rounded-full border-2 border-background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6zj9WMq1el9CjSMOgCCeOMfnpQnps8Fqo8gC2wxWgLFJPAhk2mDsRgdUzeMcuF0GjcqAbzokjzvdLBR_0lwp3zrbG5CY63_WpB7h6juj4vgqiEV8ST2kkEp8ax_-z_lEY5wFXuuAyoCJJ64yI4Rwjc09Q_l-ycE03gbCaaKOVuZaT90FoW4aMcyOdM5kLeDqlcWI0D1NYJbipj27O4oXsnkEnjyjQfhIlXEaaDQ-_03HICfytGT3EcuTHJhWzAjne2mPBSdKPc0I">
+              <img alt="User feedback 2" class="w-10 h-10 rounded-full border-2 border-background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXhQCFuBvTfZ0Y9vDXjO17gl_rZArQuIap69PrYRrdF2tkflbhTAWm4H4xJ0a1omtLeynhe2KU9Z_FBehSc36P0A-25DjVH1bweTpz_ZQ7-99fKLfai-oiAHsLf5RLnEFAnUixm429NsELtvLWOb5SkJTfwN6kw_QbqZ54pV4J7b-xaB0TlVAlQHUrwtDi01VqwU2rFFQSJZAO5g1qX_FVcyRYFXul6SWg0cqTgvc3seMGTPf25QJzZoEeQZykqmfAI6vvm45bblI">
+              <img alt="User feedback 3" class="w-10 h-10 rounded-full border-2 border-background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDroOQs39sgisMOQqLpKhtOduolhYVArG_uDWM8BOFhRkiLCNC_EYB5cj6eb0ZeaxIV8d1m5esi0xRBGBKrNjKTNU4RdbkMYSILb5w0JUF5i73yAzsfNZGeIyyBbq9W_0Vi-jy0jTHelnFLniwJH1axS0ANapGkoGsv6UEqo_OFqHXL7CCc914dY35ENJrv0oqC5z6dw8V5rAo9JBj6ju5Z2hsNjGXZqOQn-Ce6JDYMLdVaZDc0KK8-_uM_AG5MjvChTrQmlBGcqSw">
+              <div
+                class="w-10 h-10 rounded-full border-2 border-background bg-surface flex items-center justify-center text-[10px] text-outline font-bold">
+                +2k</div>
+            </div>
+            <p class="text-[12px] text-on-surface-variant mt-3 italic">"The context refresh saved my 200hr RPG save."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-20 px-6 md:px-margin-desktop border-t border-white/5 bg-background">
+      <div class="max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+        <div class="max-w-xs space-y-6">
+          <div class="flex items-center gap-3">
+            <img alt="Logo" class="h-8"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+            <span class="text-headline-md font-bold text-primary">Game Memory AI</span>
+          </div>
+          <p class="text-on-surface-variant text-label-md opacity-60">
+            Pioneering the future of digital memory and interactive storytelling through advanced context extraction.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-16">
+          <div class="space-y-4">
+            <h4 class="text-on-background font-bold text-label-md">Platform</h4>
+            <ul class="space-y-2 text-on-surface-variant text-label-md">
+              <li><a class="hover:text-primary transition-colors" href="#">Dashboard</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">My Games</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-on-background font-bold text-label-md">Resources</h4>
+            <ul class="space-y-2 text-on-surface-variant text-label-md">
+              <li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">API Status</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="space-y-4">
+            <h4 class="text-on-background font-bold text-label-md">Legal</h4>
+            <ul class="space-y-2 text-on-surface-variant text-label-md">
+              <li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+              <li><a class="hover:text-primary transition-colors" href="#">Security</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="max-w-container-max-width mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-label-sm text-on-surface-variant opacity-50">
+          © 2024 Game Memory AI. All rights reserved. Built for champions.
+        </div>
+        <div class="flex gap-6">
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+              class="material-symbols-outlined" data-icon="share">share</span></a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span
+              class="material-symbols-outlined" data-icon="public">public</span></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="../js/home.js"></script>
+</body>
+
+
+
+</html>

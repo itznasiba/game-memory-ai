@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Dashboard | Game Memory AI</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script id="tailwind-config" src="../js/dashboard.config.js"></script>
+</head>
+
+<body class="bg-background text-on-background">
+    <!-- SideNavBar -->
+    <aside
+        class="h-full w-64 fixed left-0 top-0 border-r border-white/10 bg-surface/10 backdrop-blur-xl shadow-2xl flex flex-col py-8 px-4 z-50">
+        <div class="flex items-center gap-3 mb-10 px-2">
+            <img alt="Game Memory AI Logo" class="w-10 h-10 object-contain"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDccGR-B0MK8-zbonZy3OkAAbT70BJK5IMg2WPQRH5rVlg_P6ubRZRBsKfNPTFfgYHH9g1lpqiaWJsFzJZ4l8GeETIv7a4kzvs2pdKNrcI8Z1uQzk4yJElkuC9LbDT_b25qYsPlw2RPspuxu2HWb6JVjU-cIxk_LVR3536uCArli3bfYW-Nh-CfI1F6t7L8IdPM-TAs6HEbCixXXltncosKuO7uTy8ZtzIRdXJBfrnO22jBac71QplCjzme8opRPEdoW2eJB3KPDsA">
+            <div>
+                <h1 class="text-headline-md font-headline-md font-bold text-primary leading-tight">Game Memory AI</h1>
+                <p class="text-label-sm font-label-sm text-on-surface-variant opacity-60">Pro Gamer Elite</p>
+            </div>
+        </div>
+        <nav class="flex-1 space-y-1">
+            <!-- Active Tab: Dashboard -->
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-primary font-bold border-r-2 border-primary bg-white/5 transition-all duration-200"
+                href="dashboard.html">
+                <span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+                <span class="text-label-md font-label-md">Dashboard</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="my_games.html">
+                <span class="material-symbols-outlined" data-icon="videogame_asset">videogame_asset</span>
+                <span class="text-label-md font-label-md">My Games</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="memories.html">
+                <span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+                <span class="text-label-md font-label-md">Memories</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="timeline.html">
+                <span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+                <span class="text-label-md font-label-md">Journey Timeline</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="continue_journey.html">
+                <span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+                <span class="text-label-md font-label-md">Continue Journey</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="upload_memory.html">
+                <span class="material-symbols-outlined" data-icon="cloud_upload">cloud_upload</span>
+                <span class="text-label-md font-label-md">Upload Memory</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="achievements.html">
+                <span class="material-symbols-outlined" data-icon="emoji_events">emoji_events</span>
+                <span class="text-label-md font-label-md">Achievements</span>
+            </a>
+        </nav>
+        <div class="mt-auto pt-4 border-t border-white/5">
+            <a class="flex items-center gap-3 px-3 py-3 rounded-lg text-on-surface-variant hover:bg-white/5 hover:text-primary transition-all duration-200"
+                href="settings.html">
+                <span class="material-symbols-outlined" data-icon="settings">settings</span>
+                <span class="text-label-md font-label-md">Settings</span>
+            </a>
+            <div class="flex items-center gap-3 px-3 mt-4">
+                <div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center overflow-hidden">
+                    <img alt="User profile photo" class="w-full h-full object-cover"
+                        data-alt="A close-up portrait of a professional male gamer with subtle neon lighting reflecting on his face. He is wearing high-end gaming headphones and has a focused expression. The background is a dark, tech-oriented studio with soft purple and blue ambient glows, maintaining the premium AI startup aesthetic."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGPVfoxs2hA7nEoqdqU6S2oEWzVtzCipGhcQtXkcnrv5q-XbBZmdaqosKnZtXwiar3fmQpRSuOu-aTjPDckGFuOda-B-OFJtU3fSDeoake2al2SdEJ5sHLYwUWVFwzdndqzMGXhAlzdylug85QRbcFAZ09e6rfulmx6aoyuvMkpYQB2Aln2xsMGQkrI5s3udABRZ96I8YY2bqhcbK2CI8sJ9tvXJXvAGxj-_RKKQTY1zWYRUklftBMy9nuJ-v8kBjCVCdyFMDvtU">
+                </div>
+                <div class="flex-1 overflow-hidden">
+                    <p class="text-label-md font-label-md truncate">Alex Chen</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 right-0 w-[calc(100%-256px)] h-16 z-40 bg-background/80 backdrop-blur-md border-b border-white/5 flex justify-between items-center px-8">
+        <div class="flex items-center flex-1">
+            <div class="relative w-96">
+                <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-body-md"
+                    data-icon="search">search</span>
+                <input
+                    class="w-full bg-black/20 border border-white/10 rounded-full py-1.5 pl-10 pr-4 text-body-md focus:ring-2 focus:ring-primary/50 transition-all outline-none text-on-surface"
+                    placeholder="Search memories, games, or quests..." type="text">
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="text-on-surface-variant hover:text-primary transition-colors relative">
+                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+                <span class="absolute top-0 right-0 w-2 h-2 bg-primary rounded-full"></span>
+            </button>
+            <button class="text-on-surface-variant hover:text-primary transition-colors">
+                <span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+            </button>
+        </div>
+    </header>
+    <!-- Main Content Area -->
+    <main class="ml-64 pt-24 pb-16 px-12 max-w-[1400px]">
+        <!-- Welcome & Hero Section -->
+        <section class="mb-12">
+            <div class="flex justify-between items-end mb-8">
+                <div>
+                    <h2 class="text-display font-display text-primary">Welcome Back, Gamer</h2>
+                    <p class="text-body-lg font-body-lg text-on-surface-variant mt-2">Your AI companion has synced 4 new
+                        memory shards since your last session.</p>
+                </div>
+                <button
+                    class="glass-surface group px-8 py-6 rounded-2xl flex flex-col items-center gap-2 transition-all hover:scale-105 active:scale-95"
+                    style="transform: translateY(0px); transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-lg shadow-primary/20">
+                        <span class="material-symbols-outlined text-headline-md" data-icon="add">add</span>
+                    </div>
+                    <span class="text-label-md font-label-md font-bold tracking-wider">QUICK UPLOAD</span>
+                </button>
+            </div>
+            <!-- Continue Journey Hero Card -->
+            <div class="relative w-full h-[400px] rounded-3xl overflow-hidden glass-surface group cursor-pointer"
+                style="transform: translateY(0px); transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                <div class="absolute inset-0 z-0">
+                    <img class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700"
+                        data-alt="A sprawling, dark fantasy landscape from an epic open-world game, featuring jagged peaks and a glowing Erdtree in the far distance. The scene is bathed in a twilight purple and gold atmosphere with ethereal particles floating in the air. The composition is cinematic and expansive, emphasizing high-fidelity graphics and immersive storytelling."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfXaah2RVwLhbeEL9KNvyevXbfNXbx2AcxbBM9LtHEOFdyz7u49gCEba_5m8QPqFgTShcuBaeWM8CAC1kTQC56z5fP_WeyxFGom-ZpdOHXbfQ2fOQI_tkXfMlsBqSdqEAM5EZiwR3WxjWIuYU6_XPm4ZGqgJ69WvSBthayyiULetYw_RhCQ4szEmfstskkV2J1BeGurdzIUq30qDXdmvqDSJDSLEKPDFwhuWlz_vCrSVLCvhPYywsAJVvP31aqGFzq0nS6R34AGmM">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0F] via-transparent to-transparent"></div>
+                </div>
+                <div class="absolute bottom-0 left-0 p-10 z-10 w-full flex justify-between items-end">
+                    <div class="max-w-2xl">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="glow-point"></span>
+                            <span class="text-label-sm font-label-sm text-primary uppercase tracking-[0.2em]">CURRENTLY
+                                PLAYING</span>
+                        </div>
+                        <h3 class="text-display font-display mb-4">Elden Ring</h3>
+                        <div class="flex gap-8 mb-6">
+                            <div>
+                                <p
+                                    class="text-label-sm font-label-sm text-on-surface-variant opacity-60 uppercase mb-1">
+                                    Current Objective</p>
+                                <p class="text-body-md font-body-md font-bold">Find the Three Fingers</p>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-label-sm font-label-sm text-on-surface-variant opacity-60 uppercase mb-1">
+                                    Last Played</p>
+                                <p class="text-body-md font-body-md font-bold">2 hours ago</p>
+                            </div>
+                        </div>
+                        <p class="text-body-md font-body-md text-on-surface-variant line-clamp-2 max-w-xl italic">
+                            "You've just defeated Morgott at the foot of the Erdtree. Melina suggested heading towards
+                            the Forbidden Lands, but your memory logs indicate a strange pull towards the sewers of
+                            Leyndell..."
+                        </p>
+                    </div>
+                    <button
+                        class="bg-primary text-on-primary-container px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-white transition-colors">
+                        <span class="material-symbols-outlined" data-icon="play_arrow"
+                            data-weight="fill">play_arrow</span>
+                        RESUME JOURNEY
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Stats & Grid Section -->
+        <div class="grid grid-cols-12 gap-gutter">
+            <!-- Recent Memories (Bento Style) -->
+            <section class="col-span-8">
+                <div class="flex items-center justify-between mb-6 px-2">
+                    <h4 class="text-headline-md font-headline-md">Recent Memories</h4>
+                    <a class="text-label-md font-label-md text-primary hover:underline" href="#">View All</a>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Memory Card 1 -->
+                    <div class="glass-surface p-6 rounded-2xl flex flex-col gap-4 group">
+                        <div class="h-40 rounded-xl overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-alt="A vibrant e-sports arena captured in a high-speed motion shot. Bright neon blue and pink lights streak across the screen, illuminating a professional player's mechanical keyboard and mouse. The atmosphere is electric and intense, emphasizing the competitive spirit and rapid memory capture of high-stakes gaming moments."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaDC_Bi7AjLwOcptf-wm03LS4h5ZYiMSG8SP9z081bAqnYbvqY91lglY9ZuGXhVj43kxgYVTJdcOqr49AE6XYfSABElUDquLxKXG-zJB-_LbVDpMHOyH2LHH8OyJ8JKYqY1pL6NTjy4DB0AZfHhN_4jou2-_-aizW-eZMQe9vLizNj9XNfyLKgyM9LDl5BXbfX_pOguB8o75S_mrFFK-08mqShxjFqNQPSoZ0Ygo8MMjBONn3tR_iwO1ge53AJTp2uUDsJU-J2XBE">
+                            <div
+                                class="absolute top-3 right-3 bg-tertiary/20 backdrop-blur-md border border-tertiary/30 px-2 py-1 rounded text-[10px] font-bold text-tertiary">
+                                BOSS DEFEATED</div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h5 class="text-body-lg font-bold">The Nameless King Fall</h5>
+                                <span class="text-label-sm text-on-surface-variant">Dark Souls III</span>
+                            </div>
+                            <p class="text-label-md text-on-surface-variant line-clamp-2">AI detected a heart-rate spike
+                                and 45 perfect parries. Logged as a 'Legendary' milestone.</p>
+                        </div>
+                    </div>
+                    <!-- Memory Card 2 -->
+                    <div class="glass-surface p-6 rounded-2xl flex flex-col gap-4 group">
+                        <div class="h-40 rounded-xl overflow-hidden relative">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                data-alt="A futuristic cybernetic city street at night during a heavy downpour. Neon signs in Japanese kanji reflect in deep puddles on the asphalt. The color palette is dominated by electric blues, purples, and sharp white highlights, creating a moody, high-fidelity cyberpunk aesthetic consistent with modern RPG gaming."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBn3KoTGG9OR1ga2AVq19JYIHz-pZhVylr0Hg9GjXETXdFTL-rJQoeRjTE6f4oENzZneEnXRX_8Xqt3Wlr_TaZf4vjNFoXVzlajqM3QIJSXUxfV6kgEXNyucJzpkf8zXz0Yq9KYOaRHlTkSXC6K9FqQy7nq6Mg8kZ9y5MGRKOxxPOVQ7kVuyswcoyQHUr7VUe1xcwgCjnH9SsqNmfGkMixD9cr-oSmb8O0tgvFlv88jyCeozkMHbmYYzH3RyPsXE88gT0c8lyQXTU">
+                            <div
+                                class="absolute top-3 right-3 bg-secondary/20 backdrop-blur-md border border-secondary/30 px-2 py-1 rounded text-[10px] font-bold text-secondary">
+                                STORY BEAT</div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h5 class="text-body-lg font-bold">The Konpeki Plaza Heist</h5>
+                                <span class="text-label-sm text-on-surface-variant">Cyberpunk 2077</span>
+                            </div>
+                            <p class="text-label-md text-on-surface-variant line-clamp-2">Dialogue branch analyzed: You
+                                chose to send Jackie to his family. Emotion sync: 98%.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Tracked Games & Progress (Sidebar of main area) -->
+            <section class="col-span-4 space-y-gutter">
+                <!-- Tracked Games -->
+                <div class="glass-surface p-8 rounded-3xl">
+                    <h4 class="text-headline-md font-headline-md mb-6">Tracked Games</h4>
+                    <div class="space-y-6">
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-label-md">
+                                <span>Baldur's Gate 3</span>
+                                <span class="text-primary">82%</span>
+                            </div>
+                            <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                                <div class="h-full bg-primary" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-label-md">
+                                <span>Final Fantasy VII Rebirth</span>
+                                <span class="text-secondary">34%</span>
+                            </div>
+                            <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                                <div class="h-full bg-secondary" style="width: 34%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-label-md">
+                                <span>Hades II</span>
+                                <span class="text-tertiary">59%</span>
+                            </div>
+                            <div class="w-full h-1 bg-white/5 rounded-full overflow-hidden">
+                                <div class="h-full bg-tertiary" style="width: 59%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Progress Overview / AI Activity -->
+                <div class="glass-surface p-8 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-[60px]"></div>
+                    <h4 class="text-headline-md font-headline-md mb-4">Memory Sync</h4>
+                    <div class="flex items-end gap-2 h-24 mb-6">
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 40%"></div>
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 60%"></div>
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 30%"></div>
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 90%"></div>
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 50%"></div>
+                        <div class="flex-1 bg-primary/20 rounded-t-sm transition-all hover:bg-primary/40"
+                            style="height: 75%"></div>
+                        <div class="flex-1 bg-primary rounded-t-sm shadow-[0_0_15px_rgba(210,187,255,0.5)]"
+                            style="height: 100%"></div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-label-sm text-on-surface-variant opacity-60 uppercase">Captured This Week</p>
+                            <p class="text-headline-md font-bold">1,248 MB</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-label-sm text-tertiary font-bold">+12%</p>
+                            <p class="text-label-sm text-on-surface-variant opacity-60">vs last week</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- AI Insights List (Horizontal Scroll / Modern Layout) -->
+        <section class="mt-12">
+            <div class="flex items-center gap-4 mb-8">
+                <h4 class="text-headline-md font-headline-md">AI Game Insights</h4>
+                <div class="h-px flex-1 bg-gradient-to-r from-primary/30 to-transparent"></div>
+            </div>
+            <div class="flex gap-6 overflow-x-auto pb-6 no-scrollbar">
+                <!-- Insight 1 -->
+                <div
+                    class="min-w-[400px] glass-surface p-6 rounded-2xl relative border-l-4 border-l-primary flex gap-4">
+                    <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-primary" data-icon="lightbulb">lightbulb</span>
+                    </div>
+                    <div>
+                        <h6 class="text-label-md font-bold mb-1">Combat Efficiency Alert</h6>
+                        <p class="text-body-md text-on-surface-variant mb-3">You're neglecting your 'Flask of Wondrous
+                            Physick' in 70% of boss encounters. Using it could reduce fight duration by 15%.</p>
+                        <button
+                            class="text-label-sm font-bold text-primary hover:tracking-widest transition-all">OPTIMIZE
+                            LOADOUT →</button>
+                    </div>
+                </div>
+                <!-- Insight 2 -->
+                <div
+                    class="min-w-[400px] glass-surface p-6 rounded-2xl relative border-l-4 border-l-secondary flex gap-4">
+                    <div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-secondary"
+                            data-icon="history_edu">history_edu</span>
+                    </div>
+                    <div>
+                        <h6 class="text-label-md font-bold mb-1">Story Continuity Sync</h6>
+                        <p class="text-body-md text-on-surface-variant mb-3">Recall: You promised the NPC 'Boc the
+                            Seamster' a gold needle 12 gameplay hours ago. He is currently in the Coastal Cave.</p>
+                        <button class="text-label-sm font-bold text-secondary hover:tracking-widest transition-all">SET
+                            WAYPOINT →</button>
+                    </div>
+                </div>
+                <!-- Insight 3 -->
+                <div
+                    class="min-w-[400px] glass-surface p-6 rounded-2xl relative border-l-4 border-l-tertiary flex gap-4">
+                    <div class="w-12 h-12 rounded-full bg-tertiary/10 flex items-center justify-center shrink-0">
+                        <span class="material-symbols-outlined text-tertiary" data-icon="trending_up">trending_up</span>
+                    </div>
+                    <div>
+                        <h6 class="text-label-md font-bold mb-1">Performance Peak</h6>
+                        <p class="text-body-md text-on-surface-variant mb-3">Your reaction time during the last PvP
+                            session was in the top 3% of all tracked players in your region.</p>
+                        <button class="text-label-sm font-bold text-tertiary hover:tracking-widest transition-all">SHARE
+                            CLIP →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Background Atmospheric Glows -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+        <div class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-primary/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[20%] -right-[5%] w-[30%] h-[30%] bg-secondary/5 blur-[100px] rounded-full"></div>
+    </div>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>
