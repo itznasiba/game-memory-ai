@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+    <head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Login | Aetheris AI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/geist@1.3.0/dist/fonts/geist.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config" src="../js/login.config.js"></script>
+<link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body class="bg-background text-on-surface h-screen">
+<main class="flex h-full w-full">
+<!-- Left Side: Cinematic Branding -->
+<section class="hidden lg:flex w-7/12 relative overflow-hidden items-center justify-center p-12">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Cinematic background" class="w-full h-full object-cover opacity-60" data-alt="A cinematic, deep space atmosphere with swirling nebulas in shades of midnight blue and royal purple. Faint, glowing digital constellations and crystalline geometric structures float in the void, suggesting a vast, interconnected gaming archive or neural network. The lighting is low-key with intense neon highlights that feel both futuristic and serene." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz6JJ3bUn2HMmYIq74WBVH7nj6b73iRDZsmRSS2U893NRH4L3vRVaWxdSJLKdDKTZ0fe82WHMZkATnstXf6O1t07tA6RzyPsAt9VXm2ivnbxkZ7rMl-mzgR5C7gKSQsJ0s1AqEzrCqD6Xs_KI7pw40Dl0bLpHhSy5IMfzkf6h6lifKkpzT69BSkzakciqEAijFb0A7Kq4idkXUqKWBohdYWDILiPodkDOJGyZOyJHAHKHjAWieiMTeAaD07osUvxoKv8tXkZ_IR8s">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/20 opacity-90"></div>
+</div>
+<!-- Content Overlay -->
+<div class="relative z-10 max-w-2xl">
+<div class="flex gap-8 items-start">
+<!-- Elegant Vertical Timeline Illustration -->
+<div class="flex flex-col items-center pt-4">
+<div class="w-3 h-3 rounded-full bg-primary node-glow"></div>
+<div class="timeline-line h-24"></div>
+<div class="w-2 h-2 rounded-full bg-tertiary/50"></div>
+<div class="timeline-line h-16"></div>
+<div class="w-3 h-3 rounded-full bg-primary/40"></div>
+<div class="timeline-line h-32"></div>
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div class="space-y-6 entrance-anim">
+<h1 class="font-display text-[48px] leading-[1.1] font-bold text-on-surface tracking-tight">
+                            Your Adventures Deserve to <span class="text-primary">Be Remembered</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed">
+                            Game Memory AI preserves the legacy of your greatest victories. Every quest, every detail, secured in your private gaming archive with autonomous intelligence.
+                        </p>
+<div class="flex items-center gap-4 pt-8">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-background bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-primary">stadia_controller</span>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-background bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-tertiary">psychology</span>
+</div>
+<div class="w-10 h-10 rounded-full border-2 border-background bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_done</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Trusted by 12,000+ Chroniclers</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Side: Login Form -->
+<section class="flex-1 flex items-center justify-center p-6 sm:p-12 bg-surface-container-lowest">
+<div class="w-full max-w-md entrance-anim stagger-1">
+<!-- Floating Glass Card -->
+<div class="glass-card rounded-[2rem] p-8 sm:p-10">
+<!-- Logo and Welcome -->
+<div class="flex flex-col items-center text-center mb-10">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high flex items-center justify-center mb-6 p-1">
+<img alt="Game Memory AI Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtskqLjraW60zC2bikXoQK3hzww0d4c4oUQhMwrUZmaWmVFX05ZKfjSPS0oab0s8l_XkGP-2YQVPGNWiOeKDhF7hnupY4x8_VzLj_MzDQlMNnTwuOlZc9hS2jvomcMdjfYKPBtt58YJwkAa40Ch88S7eiEnAnH0cIY_14PFjoW-97gb8k0xrJMzwQ9q7jV9TMsWfsmH75E3h38cwNDI1PbaNfQBqx6no6uYM292B7sL8I0n6ePkdjILqbA">
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Game Memory AI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Welcome back to your personal gaming archive.</p>
+</div>
+<!-- Login Form -->
+<form class="space-y-6" onsubmit="event.preventDefault();">
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="email">Email Address</label>
+<input class="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary/50 transition-all font-body-md" id="email" placeholder="commander@normandy.com" type="email">
+</div>
+<div class="space-y-1.5">
+<label class="font-label-md text-label-md text-on-surface-variant ml-1" for="password">Password</label>
+<input class="w-full bg-black/20 border border-white/10 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary/50 transition-all font-body-md" id="password" placeholder="••••••••••••" type="password">
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-4 h-4 rounded border-white/20 bg-transparent text-primary focus:ring-0 focus:ring-offset-0 transition-colors" type="checkbox">
+<span class="text-on-surface-variant group-hover:text-on-surface transition-colors">Remember me</span>
+</label>
+<a class="text-primary hover:text-primary-fixed-dim transition-colors" href="#">Forgot password?</a>
+</div>
+<button class="w-full bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-headline-md text-headline-md py-4 rounded-xl transition-all active:scale-[0.98] shadow-lg shadow-primary/20">
+                            Continue Journey
+                        </button>
+</form>
+<!-- Divider -->
+<div class="flex items-center gap-4 my-8">
+<div class="flex-1 h-px bg-white/5"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">or continue with</span>
+<div class="flex-1 h-px bg-white/5"></div>
+</div>
+<!-- OAuth Buttons -->
+<div class="grid grid-cols-3 gap-3">
+<button class="flex items-center justify-center p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/10 transition-all group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-[#5865F2]">hub</span>
+</button>
+<button class="flex items-center justify-center p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/10 transition-all group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-[#DB4437]">mail</span>
+</button>
+<button class="flex items-center justify-center p-3 rounded-xl bg-white/5 border border-white/5 hover:bg-white/10 hover:border-white/10 transition-all group">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-white">games</span>
+</button>
+</div>
+<!-- Footer Link -->
+<p class="text-center mt-10 font-label-md text-label-md text-on-surface-variant">
+                        Don't have an account? <a class="text-primary font-bold hover:underline underline-offset-4" href="#">Create one</a>
+</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Optional Atmospheric Noise -->
+<div class="fixed inset-0 pointer-events-none opacity-[0.03] z-[100]" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNvJEJ46w6GJZuZ8BZe-pKbuXp4JEouH0Razbw89qB2nUivCewXvxopCsXZA-sPjkYEzLzUJhsj44ncXFN-n5_I9H6lUrjK0Uhci9mpw7uNy9ZNqMe_fK6ouOSVn6g3Kwys77wJQCyK62oxRfk26Z-HJhVfaGgS4lYc8l4mbrxx1IdeNbjwxgNDrvF7xEVcoeMGwNcTmDuDl00h0b5lbzIcAcgg7Cb0nbHZbqNLejJE8iYanq9MWCu16-SJE6xGvP5cQ0-c1NZdKg');"></div>
+<script src="../js/login.js"></script>
+</body>
+
+</html>
